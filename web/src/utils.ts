@@ -138,6 +138,19 @@ export const MQM_ERROR_CATEGORIES: { [key: string]: string[] } = {
     "Other": [],
 }
 
+// export const MQM_ERROR_LABELS = ["Neutral", "Minor", "Major"];
+
+export const STEL_ERROR_CATEGORIES: { [key: string]: string[] } = {
+    "": [],
+    "-": [],
+    "and redundancy": ["", "-", "and embarrasing"],
+    "and embarrasing": ["", "-", "and redundancy"],
+}
+
+// export const STEL_ERROR_LABELS = ["Critical", "Minor", "Negligible", "Redundancy"];
+
+
+
 /**
  * Renders the progress bar for annotation tasks
  */
@@ -163,17 +176,18 @@ export function redrawProgress(current_i: number | null, progress: Array<boolean
     }
 }
 
-/**
- * Creates the span toolbox for error annotation
- */
-export function createSpanToolbox(
+export function createErrorButton(error_class: string, text: string): string {
+    return `<input type="button" class="error_${error_class}" style="margin-top: 3px;" value="${text}">`;
+}
+
+export function createMQMorESAToolbox(
     protocol_error_categories: boolean,
     error_span: ErrorSpan,
     tgt_chars_objs: Array<CharData>,
     left_i: number,
     right_i: number,
     onDelete: () => void,
-    frozenMode: boolean = false
+    frozenMode: boolean = false,
 ): JQuery<HTMLElement> {
     let toolbox = $(`
     <div class='span_toolbox_parent'>
@@ -330,6 +344,213 @@ export function createSpanToolbox(
         toolbox.find(".error_neutral").prop("disabled", true)
         toolbox.find(".error_minor").prop("disabled", true)
         toolbox.find(".error_major").prop("disabled", true)
+        toolbox.find("select").prop("disabled", true)
+    }
+
+    return toolbox
+}
+
+/**
+ * Creates the span toolbox for error annotation
+ */
+export function createSpanToolbox(
+    protocol_error_categories: boolean,
+    error_span: ErrorSpan,
+    tgt_chars_objs: Array<CharData>,
+    left_i: number,
+    right_i: number,
+    onDelete: () => void,
+    frozenMode: boolean = false,
+    protocol: string = "STEL" 
+): JQuery<HTMLElement> {
+    if (protocol === "MQM" || protocol === "ESA") {
+        return createMQMorESAToolbox(
+            protocol_error_categories,  
+            error_span,
+            tgt_chars_objs,
+            left_i,
+            right_i,
+            onDelete,
+            frozenMode
+        )
+    }
+
+    // toolbox for STEL:
+    let toolbox = $(`
+    <div class='span_toolbox_parent'>
+    <div class='span_toolbox'>
+      <div class="span_toolbox_esa" style="display: inline-block; width: 70px; padding-right: 5px;">
+        <input type="button" class="error_delete" style="border-radius: 8px;" value="Remove">
+        <input type="button" class="error_major" style="border-radius: 8px;" value="Critical">
+        <input type="button" class="error_minor" style="margin-top: 3px;" value="Minor">
+        <input type="button" class="error_neutral" style="margin-top: 3px;" value="Negligible">
+        <input type="button" class="error_redundancy" style="margin-top: 3px;" value="Redundancy">
+      </div>
+      <div class="span_toolbox_mqm" style="display: inline-block; width: 140px; vertical-align: top;">
+        <select style="height: 2em; width: 100%;"></select><br>
+        <select style="height: 2em; width: 100%; margin-top: 3px;" disabled></select>
+      </div>
+    </div>
+    </div>
+    `)
+    let ERROR_CATEGORIES = STEL_ERROR_CATEGORIES
+
+    for (let category1 of Object.keys(ERROR_CATEGORIES)) {
+        toolbox.find("select").eq(0).append(`<option value="${category1}">${category1}</option>`)
+    }
+
+    // select one category handler
+    toolbox.find("select").eq(0).on("change", function () {
+        if (frozenMode) return
+        let cat1 = (<HTMLSelectElement>this).value
+        error_span.category = cat1
+        let subcat_select = toolbox.find("select").eq(1)
+        subcat_select.empty()
+        let subcats = ERROR_CATEGORIES[cat1]
+        subcat_select.prop("disabled", false)
+        for (let subcat of subcats) {
+            subcat_select.append(`<option value="${subcat}">${subcat}</option>`)
+        }
+        if (cat1 == "") {
+            subcat_select.prop("disabled", true)
+            error_span.category = ""
+        } else if (cat1 == "-") {
+            subcat_select.prop("disabled", true)
+            error_span.category = "-/-"
+        } else {
+            error_span.category = `${cat1}`
+        }
+    })
+
+    toolbox.find("select").eq(1).on("change", function () {
+        if (frozenMode) return
+        let cat1 = toolbox.find("select").eq(0).val() as string
+        let cat2 = (<HTMLSelectElement>this).value
+        // enforce both category and subcategory
+        if (cat2 == "" && cat1 != "-") {
+            error_span.category = `${cat1}`
+        } else {
+            error_span.category = `${cat1}/${cat2}`
+        }
+    })
+
+    if (!protocol_error_categories) {
+        // only MQM has neutral severity
+        toolbox.find(".error_neutral").remove()
+        toolbox.find(".span_toolbox_mqm").remove()
+        toolbox.find(".span_toolbox_esa").css("border-right", "")
+        toolbox.find(".span_toolbox_esa").css("margin-right", "-5px")
+    }
+
+    // handle delete button
+    toolbox.find(".error_delete").on("click", () => {
+        if (frozenMode) return
+        toolbox.remove()
+        for (let j = left_i; j <= right_i; j++) {
+            $(tgt_chars_objs[j].el).removeClass("error_unknown")
+            $(tgt_chars_objs[j].el).removeClass("error_neutral")
+            $(tgt_chars_objs[j].el).removeClass("error_minor")
+            $(tgt_chars_objs[j].el).removeClass("error_major")
+            $(tgt_chars_objs[j].el).removeClass("error_redundancy")
+            tgt_chars_objs[j].toolbox = null
+            tgt_chars_objs[j].error_span = null
+        }
+        onDelete()
+    })
+
+    // handle severity buttons
+    toolbox.find(".error_neutral").on("click", () => {
+        if (frozenMode) return
+        for (let j = left_i; j <= right_i; j++) {
+            $(tgt_chars_objs[j].el).removeClass("error_unknown")
+            $(tgt_chars_objs[j].el).removeClass("error_minor")
+            $(tgt_chars_objs[j].el).removeClass("error_major")
+            $(tgt_chars_objs[j].el).removeClass("error_redundancy")
+            $(tgt_chars_objs[j].el).addClass("error_neutral")
+        }
+        error_span.severity = "neutral"
+    })
+
+    toolbox.find(".error_minor").on("click", () => {
+        if (frozenMode) return
+        for (let j = left_i; j <= right_i; j++) {
+            $(tgt_chars_objs[j].el).removeClass("error_unknown")
+            $(tgt_chars_objs[j].el).removeClass("error_neutral")
+            $(tgt_chars_objs[j].el).removeClass("error_major")
+            $(tgt_chars_objs[j].el).removeClass("error_redundancy")
+
+            $(tgt_chars_objs[j].el).addClass("error_minor")
+        }
+        error_span.severity = "minor"
+    })
+
+    toolbox.find(".error_major").on("click", () => {
+        if (frozenMode) return
+        for (let j = left_i; j <= right_i; j++) {
+            $(tgt_chars_objs[j].el).removeClass("error_unknown")
+            $(tgt_chars_objs[j].el).removeClass("error_neutral")
+            $(tgt_chars_objs[j].el).removeClass("error_minor")
+            $(tgt_chars_objs[j].el).removeClass("error_redundancy")
+            $(tgt_chars_objs[j].el).addClass("error_major")
+        }
+        error_span.severity = "major"
+    })
+
+    toolbox.find(".error_redundancy").on("click", () => {
+        if (frozenMode) return
+        for (let j = left_i; j <= right_i; j++) {
+            $(tgt_chars_objs[j].el).removeClass("error_unknown")
+            $(tgt_chars_objs[j].el).removeClass("error_neutral")
+            $(tgt_chars_objs[j].el).removeClass("error_minor")
+            $(tgt_chars_objs[j].el).removeClass("error_major")
+            $(tgt_chars_objs[j].el).addClass("error_redundancy")
+        }
+        error_span.severity = "redundancy"
+    })
+
+    // Restore category from error_span if it exists (for previously saved annotations)
+    if (protocol_error_categories && error_span.category && error_span.category.includes("/")) {
+        const [cat1, cat2] = error_span.category.split("/")
+        const cat1_select = toolbox.find("select").eq(0)
+        const cat2_select = toolbox.find("select").eq(1)
+
+        // Set the first dropdown
+        cat1_select.val(cat1)
+
+        // Populate and set the second dropdown
+        cat2_select.empty()
+        const subcats = ERROR_CATEGORIES[cat1]
+        if (subcats) {
+            cat2_select.prop("disabled", false)
+            for (let subcat of subcats) {
+                cat2_select.append(`<option value="${subcat}">${subcat}</option>`)
+            }
+            cat2_select.val(cat2)
+        }
+    } else if (protocol_error_categories && error_span.category && error_span.category !== "") {
+        // Handle case where only category is set (no subcategory yet)
+        const cat1_select = toolbox.find("select").eq(0)
+        cat1_select.val(error_span.category)
+
+        // Populate the second dropdown but don't select anything yet
+        const cat2_select = toolbox.find("select").eq(1)
+        cat2_select.empty()
+        const subcats = ERROR_CATEGORIES[error_span.category]
+        if (subcats && error_span.category !== "-") {
+            cat2_select.prop("disabled", false)
+            for (let subcat of subcats) {
+                cat2_select.append(`<option value="${subcat}">${subcat}</option>`)
+            }
+        }
+    }
+
+    // In frozen mode, disable all modification controls
+    if (frozenMode) {
+        toolbox.find(".error_delete").prop("disabled", true)
+        toolbox.find(".error_neutral").prop("disabled", true)
+        toolbox.find(".error_minor").prop("disabled", true)
+        toolbox.find(".error_major").prop("disabled", true)
+        toolbox.find(".error_redundancy").prop("disabled", true)
         toolbox.find("select").prop("disabled", true)
     }
 
@@ -498,7 +719,7 @@ export type SliderConfig = {
 
 // Shared protocol info type
 export type ProtocolInfo = {
-    protocol: "DA" | "ESA" | "MQM",
+    protocol: "DA" | "ESA" | "MQM" | "STEL",
     item_i: number,
     sliders?: SliderConfig[],  // Optional custom slider configurations
     instructions?: string,

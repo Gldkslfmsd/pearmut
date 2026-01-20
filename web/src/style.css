@@ -112,6 +112,10 @@ label {
     background-color: #e88;
 }
 
+.error_redundancy {
+    background-color: rgb(173, 164, 211);
+}
+
 /* Span toolbox */
 .span_toolbox {
     background-color: white;
@@ -132,6 +136,7 @@ label {
 input[type="button"].error_neutral {
     background-color: #ecc9 !important;
     width: 100%;
+    font-size: 10pt;
     text-align: center;
     border-radius: 8px;
 }
@@ -143,6 +148,7 @@ input[type="button"].error_neutral:hover {
 input[type="button"].error_minor {
     background-color: #fcc !important;
     width: 100%;
+    font-size: 10pt;
     text-align: center;
     border-radius: 8px;
 }
@@ -151,9 +157,22 @@ input[type="button"].error_minor:hover {
     background-color: #daa !important;
 }
 
+input[type="button"].error_redundancy {
+    background-color: rgb(173, 164, 211) !important;
+    width: 100%;
+    font-size: 10pt;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input[type="button"].error_redundancy:hover {
+    background-color: rgb(122, 109, 179) !important;
+}
+
 input[type="button"].error_major {
     background-color: #e88 !important;
     width: 100%;
+    font-size: 10pt;
     text-align: center;
     border-radius: 8px;
 }

@@ -279,8 +279,8 @@ async function display_next_payload(response: DataPayload) {
         $("#button_skip_tutorial").hide()
     }
 
-    protocol_error_spans = response.info.protocol == "ESA" || response.info.protocol == "MQM"
-    protocol_error_categories = response.info.protocol == "MQM"
+    protocol_error_spans = response.info.protocol == "ESA" || response.info.protocol == "MQM" || response.info.protocol == "STEL"
+    protocol_error_categories = response.info.protocol == "MQM" || response.info.protocol == "STEL"
 
     // Set global instructions from payload
     if (response.info.instructions) {
@@ -512,7 +512,8 @@ async function display_next_payload(response: DataPayload) {
                                         action_log.push({ "time": Date.now() / 1000, "action": "delete_span", "index": item_i, "model": model, "start_i": left_i, "end_i": right_i })
                                         has_unsaved_work = true
                                     },
-                                    frozenMode
+                                    frozenMode, 
+                                    response.info.protocol
                                 )
 
                                 $("body").append(toolbox)
