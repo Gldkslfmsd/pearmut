@@ -1,0 +1,307 @@
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 1, "src_lang": "cs", "tgt_lang": "en", "output": "So I would like to ask my colleagues from UFAL, the Institute of Formally Applied Linguistics, the Faculty of Mathematics and Physics, and Karlov University in Prague, I don't know if they need to add,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 2, "src_lang": "cs", "tgt_lang": "en", "output": "but I would like to ask Ondřej Duška, Rudolf Ros and Tomáš Musil, who agreed to be mentors,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 3, "src_lang": "cs", "tgt_lang": "en", "output": "to come here to the podium and present directly from here what they can help with."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 4, "src_lang": "cs", "tgt_lang": "en", "output": "I think,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 5, "src_lang": "cs", "tgt_lang": "en", "output": "who do we have on Zoom?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 6, "src_lang": "cs", "tgt_lang": "en", "output": "Ondřej."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 7, "src_lang": "cs", "tgt_lang": "en", "output": "Ondřej? So we would like"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 8, "src_lang": "cs", "tgt_lang": "en", "output": "to ask Ondřej. As Tomáš said,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 9, "src_lang": "cs", "tgt_lang": "en", "output": "I am an expert assistant there and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 10, "src_lang": "cs", "tgt_lang": "en", "output": "I am focused on computer language processing and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 11, "src_lang": "cs", "tgt_lang": "en", "output": "mainly I deal with chatbots or dialogue with the computer and also language generation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 12, "src_lang": "cs", "tgt_lang": "en", "output": "So I can help with some design of machine learning approaches for these things or with some tools and so on. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 13, "src_lang": "cs", "tgt_lang": "en", "output": "that's about it for me."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 14, "src_lang": "cs", "tgt_lang": "en", "output": "What"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 15, "src_lang": "cs", "tgt_lang": "en", "output": "can you help with? So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 16, "src_lang": "cs", "tgt_lang": "en", "output": "I am Rudolf,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 17, "src_lang": "cs", "tgt_lang": "en", "output": "I am also a computer linguist from Matfizu, so it"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 18, "src_lang": "cs", "tgt_lang": "en", "output": "is partly similar, some text processing, language analysis of the text, text generation, using some tools we have, for example,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 19, "src_lang": "cs", "tgt_lang": "en", "output": "we have a lot of APIs for these things, so basically these things."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 20, "src_lang": "cs", "tgt_lang": "en", "output": "Hello, I am Tomáš and at UFO"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 21, "src_lang": "cs", "tgt_lang": "en", "output": "I mainly deal with representation and meaning and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 22, "src_lang": "cs", "tgt_lang": "en", "output": "I can help with machine learning, whether it concerns text or image processing."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 23, "src_lang": "cs", "tgt_lang": "en", "output": "Perfect. I would like to thank my colleagues and mentors for introducing themselves, either on Zoom or"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 24, "src_lang": "cs", "tgt_lang": "en", "output": "here. I would like to ask the gentlemen to move to their seats, because we have a workshop ahead of us after"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 25, "src_lang": "cs", "tgt_lang": "en", "output": "the mentors'introduction. It will last about 31 minutes until 12:00, and we will be talking to Rudolf and Tomáš."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 26, "src_lang": "cs", "tgt_lang": "en", "output": "I would also like to invite David Košťák, a playwright from Švandová Theatre, and Martina Kinská, a playwright from Švandová Theatre, if they would take their seats here."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 27, "src_lang": "cs", "tgt_lang": "en", "output": "The workshop will start in a few seconds, in 30 seconds, before the detailed presentation of the challenges, already on Zoom, not in the form of public streaming. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 28, "src_lang": "cs", "tgt_lang": "en", "output": "if you are now wondering where I will learn more about those challenges, where I will be able to discuss,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 29, "src_lang": "cs", "tgt_lang": "en", "output": "it is on Zoom."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 30, "src_lang": "cs", "tgt_lang": "en", "output": "Go to our Slek channel Roboton."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 31, "src_lang": "cs", "tgt_lang": "en", "output": "If you don't know how to get to Slek, there is a button on the website roboton.cz with a link that will shoot you there and from 12 hours after the workshop on that. Theater,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 32, "src_lang": "cs", "tgt_lang": "en", "output": "which is a project where artificial intelligence writes a theater game with people, will be followed by a detailed description of the challenges at 12 o'clock. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 33, "src_lang": "cs", "tgt_lang": "en", "output": "now I invite you all to participate in our talk, where"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 34, "src_lang": "cs", "tgt_lang": "en", "output": "I will talk to Rudolf Rosu, Tomáš Musila, both from the Institute of Formal Applied Linguistics of the Mathematical and Physical Faculty"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 35, "src_lang": "cs", "tgt_lang": "en", "output": "of Karlov University, then David Košták and Martina Kinská from Švandova Theatre will be the guests,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 36, "src_lang": "cs", "tgt_lang": "en", "output": "and we will talk about the theater game project, which helps. A man writes artificial"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 37, "src_lang": "cs", "tgt_lang": "en", "output": "intelligence and will be the prime minister of this game in about a month, on February 26th, here at the Swan Theatre, from where we are now broadcasting the robot. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 38, "src_lang": "cs", "tgt_lang": "en", "output": "let's do it."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 39, "src_lang": "cs", "tgt_lang": "en", "output": "I'll sit down for a moment."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 40, "src_lang": "cs", "tgt_lang": "en", "output": "I'll just say something about the"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 41, "src_lang": "cs", "tgt_lang": "en", "output": "project."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 42, "src_lang": "cs", "tgt_lang": "en", "output": "The project was created as a result of frustration that nobody is celebrating the anniversary of the 100th anniversary of the word robot. Which appeared on January 25, 1921 in the premiere of Eruer, which was"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 43, "src_lang": "cs", "tgt_lang": "en", "output": "in the National Theatre."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 44, "src_lang": "cs", "tgt_lang": "en", "output": "She was still one of the premiers, illegal, black, in Hraci Králové,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 45, "src_lang": "cs", "tgt_lang": "en", "output": "so it appeared even earlier."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 46, "src_lang": "cs", "tgt_lang": "en", "output": "After a hundred years, thanks to the fact that Rudolf and colleagues from Švandova Theatre, Daniel Herbeck, to whom I presented it, did not reject it as complete nonsense and nonsense"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 47, "src_lang": "cs", "tgt_lang": "en", "output": "that artificial intelligence could try to write a theater game."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 48, "src_lang": "cs", "tgt_lang": "en", "output": "And then the team grew even more with colleagues from DAM, submitted no."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 49, "src_lang": "cs", "tgt_lang": "en", "output": "To Thatcher, the Czech Republic's technology agency, as part of the ETA program, and he succeeded."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 50, "src_lang": "cs", "tgt_lang": "en", "output": "So the whole action, the two-year project, is also supported by the Czech Republic's technology agency as applied research in social sciences."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 51, "src_lang": "cs", "tgt_lang": "en", "output": "It is relatively unique worldwide. There were some attempts for artificial intelligence to write a film script, write stories, fairy tales, and poems."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 52, "src_lang": "cs", "tgt_lang": "en", "output": "And I would like to pass it on here. So maybe we could do a little Turing test"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 53, "src_lang": "cs", "tgt_lang": "en", "output": "for you, hackers and viewers who are watching this streaming."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 54, "src_lang": "cs", "tgt_lang": "en", "output": "If you agree, Rudolf,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 55, "src_lang": "cs", "tgt_lang": "en", "output": "you have"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 56, "src_lang": "cs", "tgt_lang": "en", "output": "prepared such an opening and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 57, "src_lang": "cs", "tgt_lang": "en", "output": "I will have to put it on my machine next to it. And I would like to ask you if you could tell me what it is about. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 58, "src_lang": "cs", "tgt_lang": "en", "output": "it is Uribex Karl Čapka-Ruer,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 59, "src_lang": "cs", "tgt_lang": "en", "output": "I will read it briefly."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 60, "src_lang": "cs", "tgt_lang": "en", "output": "The first robot says,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 61, "src_lang": "cs", "tgt_lang": "en", "output": "sir, machines cannot work,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 62, "src_lang": "cs", "tgt_lang": "en", "output": "we cannot diversify."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 63, "src_lang": "cs", "tgt_lang": "en", "output": "The second robot says, we multiplied the work,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 64, "src_lang": "cs", "tgt_lang": "en", "output": "we have nowhere to put what we have produced."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 65, "src_lang": "cs", "tgt_lang": "en", "output": "The second robot says, for whom?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 66, "src_lang": "cs", "tgt_lang": "en", "output": "The second robot says, for the next generation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 67, "src_lang": "cs", "tgt_lang": "en", "output": "The first robot says, we can't just produce robots."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 68, "src_lang": "cs", "tgt_lang": "en", "output": "Machines only produce bloody pieces of meat. Skins don't go to meat and meat to bones."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 69, "src_lang": "cs", "tgt_lang": "en", "output": "Without shape, chuchvalce, it rains from the machines. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 70, "src_lang": "cs", "tgt_lang": "en", "output": "the second robot says, people knew the secret of life, reputation is their secret. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 71, "src_lang": "cs", "tgt_lang": "en", "output": "this was written by Karel Čapek in EduR. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 72, "src_lang": "cs", "tgt_lang": "en", "output": "what did you do with it?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 73, "src_lang": "cs", "tgt_lang": "en", "output": "We took a tool that we will talk about today,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 74, "src_lang": "cs", "tgt_lang": "en", "output": "which automatically generates scripts, theater games."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 75, "src_lang": "cs", "tgt_lang": "en", "output": "And we entered this as an input"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 76, "src_lang": "cs", "tgt_lang": "en", "output": "."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 77, "src_lang": "cs", "tgt_lang": "en", "output": "And the tool then continued with the text, that is, it generated some continuation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 78, "src_lang": "cs", "tgt_lang": "en", "output": "And now we have an item for you where you will see two possible continuations."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 79, "src_lang": "cs", "tgt_lang": "en", "output": "One is the original one from the real RUR game, and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 80, "src_lang": "cs", "tgt_lang": "en", "output": "the other is the one that generated our tool."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 81, "src_lang": "cs", "tgt_lang": "en", "output": "And your task will be to know what is real from a human"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 82, "src_lang": "cs", "tgt_lang": "en", "output": "and what is automatically generated from artificial intelligence."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 83, "src_lang": "cs", "tgt_lang": "en", "output": "So just instructions,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 84, "src_lang": "cs", "tgt_lang": "en", "output": "write your types with the fact that what you see on the left will be L."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 85, "src_lang": "cs", "tgt_lang": "en", "output": "And what you see on the right will be P, so give us"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 86, "src_lang": "cs", "tgt_lang": "en", "output": "your estimates in SLEK. There is a channel for questions and answers, so feel free to"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 87, "src_lang": "cs", "tgt_lang": "en", "output": "write to us in this channel if you think. Now we"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 88, "src_lang": "cs", "tgt_lang": "en", "output": "are asking"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 89, "src_lang": "cs", "tgt_lang": "en", "output": "what the machine"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 90, "src_lang": "cs", "tgt_lang": "en", "output": "generated."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 91, "src_lang": "cs", "tgt_lang": "en", "output": "So let us know what version the machine generated."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 92, "src_lang": "cs", "tgt_lang": "en", "output": "If it is the one on the left, that is L, then write L in SLEK for questions and challenges. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 93, "src_lang": "cs", "tgt_lang": "en", "output": "if you think the machine generated the right part of the dialogue, then give us P."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 94, "src_lang": "cs", "tgt_lang": "en", "output": "We will wait, or we will talk for a while. Type"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 95, "src_lang": "cs", "tgt_lang": "en", "output": ", vote. So how does it come about"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 96, "src_lang": "cs", "tgt_lang": "en", "output": ", Rulf? You started"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 97, "src_lang": "cs", "tgt_lang": "en", "output": ", now we are here with the trick,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 98, "src_lang": "cs", "tgt_lang": "en", "output": "the Turing test, such a dramatic one, so"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 99, "src_lang": "cs", "tgt_lang": "en", "output": "how is the theater done for you as a mathematician?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 100, "src_lang": "cs", "tgt_lang": "en", "output": "There are of course a lot of difficult problems, but we were"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 101, "src_lang": "cs", "tgt_lang": "en", "output": "actually surprised from the beginning that today the big language models, I use specifically GPT 2 from OpenAI, can generate quite good text on their own,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 102, "src_lang": "cs", "tgt_lang": "en", "output": "in English, if a person wants to generate in English. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 103, "src_lang": "cs", "tgt_lang": "en", "output": "the basis is really just education. Here is the model, prepare the input we saw,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 104, "src_lang": "cs", "tgt_lang": "en", "output": "and with a bit of luck the model catches"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 105, "src_lang": "cs", "tgt_lang": "en", "output": "up, recognizes the format of it, so it"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 106, "src_lang": "cs", "tgt_lang": "en", "output": "continues in a similar way,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 107, "src_lang": "cs", "tgt_lang": "en", "output": "generates the names of the characters,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 108, "src_lang": "cs", "tgt_lang": "en", "output": "generates some replies,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 109, "src_lang": "cs", "tgt_lang": "en", "output": "and sticks to the topic."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 110, "src_lang": "cs", "tgt_lang": "en", "output": "So the beginning is actually easy."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 111, "src_lang": "cs", "tgt_lang": "en", "output": "Now I would ask maybe David, who represents the dramatic here,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 112, "src_lang": "cs", "tgt_lang": "en", "output": "as a playwright of the Schwand theater in Prague."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 113, "src_lang": "cs", "tgt_lang": "en", "output": "What did you say at the moment when Daniel or who came up with the idea that the game would be introduced here? Whose text, dialogues should be written by artificial intelligence"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 114, "src_lang": "cs", "tgt_lang": "en", "output": ". First of all, as a playwright, I also thought that I was born into a bad time,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 115, "src_lang": "cs", "tgt_lang": "en", "output": "that someone else would replace me in a moment,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 116, "src_lang": "cs", "tgt_lang": "en", "output": "but at the same time, it seemed important to me to be involved in this project, because it can develop into a relatively interesting tool for authors,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 117, "src_lang": "cs", "tgt_lang": "en", "output": "not only theatrical ones, I know computer games that are generated independently, and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 118, "src_lang": "cs", "tgt_lang": "en", "output": "that there can be some artificially generated dialogue in"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 119, "src_lang": "cs", "tgt_lang": "en", "output": "them, that's great, but I'm not hiding that. I approach it with curiosity and healthy skepticism."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 120, "src_lang": "cs", "tgt_lang": "en", "output": "And Tomáš, what feelings did you experience when Rudolf came up with this idea and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 121, "src_lang": "cs", "tgt_lang": "en", "output": "said, This is what I want, this is interesting,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 122, "src_lang": "cs", "tgt_lang": "en", "output": "or he said, VTF. I said"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 123, "src_lang": "cs", "tgt_lang": "en", "output": "to myself that this is interesting and that it should be tried out,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 124, "src_lang": "cs", "tgt_lang": "en", "output": "and that I am curious how far we can go in this. I"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 125, "src_lang": "cs", "tgt_lang": "en", "output": "can ask you,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 126, "src_lang": "cs", "tgt_lang": "en", "output": "when I read about it like this, more lightly, everyone agrees, all capacities say that artificial intelligence, even if it is called intelligence, So, in fact, he is not intelligent at all,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 127, "src_lang": "cs", "tgt_lang": "en", "output": "he doesn't understand anything."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 128, "src_lang": "cs", "tgt_lang": "en", "output": "And how can such,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 129, "src_lang": "cs", "tgt_lang": "en", "output": "I don't know, one, zero, who have no reason to make any confession about the world, but just listen to the person who presses the button and they do something,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 130, "src_lang": "cs", "tgt_lang": "en", "output": "how can they say something essential about human life? Well,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 131, "src_lang": "cs", "tgt_lang": "en", "output": "that's a pretty complicated question."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 132, "src_lang": "cs", "tgt_lang": "en", "output": "I think. One thing is what you said here before in the context of presenting those challenges,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 133, "src_lang": "cs", "tgt_lang": "en", "output": "namely that what is or is not intelligent, the boundary is constantly shifting. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 134, "src_lang": "cs", "tgt_lang": "en", "output": "it's exactly the way you are."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 135, "src_lang": "cs", "tgt_lang": "en", "output": "This means that we consider some behavior to be intelligent, then we reproduce it machine-wise. This is,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 136, "src_lang": "cs", "tgt_lang": "en", "output": "for example, playing chess, which was long considered intellectually very demanding."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 137, "src_lang": "cs", "tgt_lang": "en", "output": "Then it turned out that it can be done relatively easily machine-wise, with a large computer power, but which is not that big from today's perspective. However, it can be done relatively easily machine-wise"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 138, "src_lang": "cs", "tgt_lang": "en", "output": "and since then it has not been considered as some kind of proof of intelligence."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 139, "src_lang": "cs", "tgt_lang": "en", "output": "I don't know if"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 140, "src_lang": "cs", "tgt_lang": "en", "output": "the machine can say something essential. It is always some kind of copying of something that was somehow inserted into the machine."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 141, "src_lang": "cs", "tgt_lang": "en", "output": "On the other hand, copying and transposing different pieces can create something that tells us something interesting."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 142, "src_lang": "cs", "tgt_lang": "en", "output": "In a good sense, it is a question of whether people are intelligent. A lot"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 143, "src_lang": "cs", "tgt_lang": "en", "output": "of people say that a person just absorbs what he has seen somewhere and somehow"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 144, "src_lang": "cs", "tgt_lang": "en", "output": "rekombines it and then uses it further, so"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 145, "src_lang": "cs", "tgt_lang": "en", "output": "we must not be overly inflated about ourselves."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 146, "src_lang": "cs", "tgt_lang": "en", "output": "If I may, I would also like to steal this question."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 147, "src_lang": "cs", "tgt_lang": "en", "output": "And I think we can actually learn from that, What you write, or quite a lot,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 148, "src_lang": "cs", "tgt_lang": "en", "output": "because what is interesting about it is that it is actually free from those emotions, so it is a relatively analytical tool."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 149, "src_lang": "cs", "tgt_lang": "en", "output": "And already from the fact that the computer learned a lot about us based on the dialogues and scenarios it read,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 150, "src_lang": "cs", "tgt_lang": "en", "output": "I assume that what he then offered me was based on some statistics of what most often appears in those scenarios."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 151, "src_lang": "cs", "tgt_lang": "en", "output": "And from this point of view, these are quite interesting findings."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 152, "src_lang": "cs", "tgt_lang": "en", "output": "For example, that whether we meet any two characters, quite often in the first stages, before the probability changed,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 153, "src_lang": "cs", "tgt_lang": "en", "output": "there was always a sexual contact, whether it was. That everything was directed"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 154, "src_lang": "cs", "tgt_lang": "en", "output": "not towards love, as the writers tell us, but towards the contact itself."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 155, "src_lang": "cs", "tgt_lang": "en", "output": "It is interesting that the neural network only comes from what goes into it on the one hand,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 156, "src_lang": "cs", "tgt_lang": "en", "output": "and if the dramatic moments, exceptional in human life, go into it, then the pebbles fall right away. But"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 157, "src_lang": "cs", "tgt_lang": "en", "output": "on the other hand,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 158, "src_lang": "cs", "tgt_lang": "en", "output": "time demands a lot, the extreme dramatic situations attract our attention."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 159, "src_lang": "cs", "tgt_lang": "en", "output": "I just want to go back to the Turing test, adapted for the theater dialogue."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 160, "src_lang": "cs", "tgt_lang": "en", "output": "You saw the two columns there,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 161, "src_lang": "cs", "tgt_lang": "en", "output": "so"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 162, "src_lang": "cs", "tgt_lang": "en", "output": "which one,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 163, "src_lang": "cs", "tgt_lang": "en", "output": "I don't know, we can see them again now,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 164, "src_lang": "cs", "tgt_lang": "en", "output": "so I'll ask Rudolf, for example, to reveal whether the computer generated the left one or the right one."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 165, "src_lang": "cs", "tgt_lang": "en", "output": "Yes, I'll reveal it,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 166, "src_lang": "cs", "tgt_lang": "en", "output": "but I can't"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 167, "src_lang": "cs", "tgt_lang": "en", "output": "see it properly. So the computer generated the left one."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 168, "src_lang": "cs", "tgt_lang": "en", "output": "The left one."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 169, "src_lang": "cs", "tgt_lang": "en", "output": "You can see it well, when"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 170, "src_lang": "cs", "tgt_lang": "en", "output": "it is necessary to go and look at the monitor."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 171, "src_lang": "cs", "tgt_lang": "en", "output": "But it is clear that even the author of the slide, at first glance, is not entirely confident in the distinction,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 172, "src_lang": "cs", "tgt_lang": "en", "output": "but the computer generated the column, the dialogues, which are on the left."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 173, "src_lang": "cs", "tgt_lang": "en", "output": "Then we will look at the slice, or I will ask my colleagues if they are on the slice, to possibly wait for how many of you hit."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 174, "src_lang": "cs", "tgt_lang": "en", "output": "But here the Turing tests show that actually. It is complicated and much more complicated to identify what the help of the machine is"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 175, "src_lang": "cs", "tgt_lang": "en", "output": "worth versus where the person himself, again with the help of a more primitive machine or tool, performed"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 176, "src_lang": "cs", "tgt_lang": "en", "output": "it. This is perhaps a question for everyone: whether the future is in the fact that machines help in the theater, such as backstage or lights or some devices that release"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 177, "src_lang": "cs", "tgt_lang": "en", "output": "smoke. I remember the theater like this from my childhood, when I still went to the theater."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 178, "src_lang": "cs", "tgt_lang": "en", "output": "But perhaps in the future, one of such tools, Who can move the theatre forward? Will artificial intelligence be possible or not? How"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 179, "src_lang": "cs", "tgt_lang": "en", "output": "do you see it, Davide?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 180, "src_lang": "cs", "tgt_lang": "en", "output": "Well, that is the question."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 181, "src_lang": "cs", "tgt_lang": "en", "output": "I think there are possibilities,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 182, "src_lang": "cs", "tgt_lang": "en", "output": "but I think there is one thing that is not technological,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 183, "src_lang": "cs", "tgt_lang": "en", "output": "and that is the uncertainty of the authors and artists, that we all need to feel that we are the original ones."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 184, "src_lang": "cs", "tgt_lang": "en", "output": "And actually, I can't imagine that someone will openly admit that someone else helped him with writing."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 185, "src_lang": "cs", "tgt_lang": "en", "output": "But I think,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 186, "src_lang": "cs", "tgt_lang": "en", "output": "or for me, as I watched the program, the strength of what the computer generates is actually in the randomness, how many times."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 187, "src_lang": "cs", "tgt_lang": "en", "output": "The author, burdened with a certain probability and realistic games, can hardly afford to disrupt some logic,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 188, "src_lang": "cs", "tgt_lang": "en", "output": "whereas the computer offers quite interesting triggers in this regard."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 189, "src_lang": "cs", "tgt_lang": "en", "output": "So I can imagine that if I suffered an author's crisis, I would generate a part of the dialogue that could inspire me for further creation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 190, "src_lang": "cs", "tgt_lang": "en", "output": "But I don't know if I would admit it."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 191, "src_lang": "cs", "tgt_lang": "en", "output": "At the same time, it seems to me that it gives you the opportunity, as an author,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 192, "src_lang": "cs", "tgt_lang": "en", "output": "to give some distance, to say that the game is a bit stupid. It's not my fault that"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 193, "src_lang": "cs", "tgt_lang": "en", "output": "it was generated by artificial intelligence, so it wants to tell us something."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 194, "src_lang": "cs", "tgt_lang": "en", "output": "The fact that we don't understand it is"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 195, "src_lang": "cs", "tgt_lang": "en", "output": "our fault, and that a person is getting rid of"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 196, "src_lang": "cs", "tgt_lang": "en", "output": "that responsibility. But I think it's unbelievable how it could help in the future in quantitative writing."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 197, "src_lang": "cs", "tgt_lang": "en", "output": "In that sense, when games are created today that generate themselves, it's great that they could be accompanied by a dialogue that is generated by themselves."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 198, "src_lang": "cs", "tgt_lang": "en", "output": "I would ask all of you who are watching now, Our small workshop, debate."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 199, "src_lang": "cs", "tgt_lang": "en", "output": "You can ask questions, please do it again through Slack, Roboton 2021."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 200, "src_lang": "cs", "tgt_lang": "en", "output": "There is a channel, I think, questions and something,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 201, "src_lang": "cs", "tgt_lang": "en", "output": "answers or questions, there are"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 202, "src_lang": "cs", "tgt_lang": "en", "output": "questions, so ask your questions"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 203, "src_lang": "cs", "tgt_lang": "en", "output": "and we will then look at it in five minutes and try to answer some questions that will come from you who are watching and listening to us."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 204, "src_lang": "cs", "tgt_lang": "en", "output": "I would like to follow up on what was said here, that what a person puts into the network at the beginning, like the input, affects what will come out of it, how it will be."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 205, "src_lang": "cs", "tgt_lang": "en", "output": "It shows here in the tendency of artificial intelligence to come into contact with sexuality during the first minutes of the dramatic performance."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 206, "src_lang": "cs", "tgt_lang": "en", "output": "I read a big article the day before yesterday, well, a fairly big one, I think, in the MIT Technology Review, where the big topic and for 2021,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 207, "src_lang": "cs", "tgt_lang": "en", "output": "which should be addressed in the field of artificial intelligence, is precisely the bias, as it is called, the burden, which then leads to the fact that it was a failed attempt, I think, in Britain with applications to schools, when artificial intelligence evaluates some, I don't know, loans and so on."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 208, "src_lang": "cs", "tgt_lang": "en", "output": "It may have some kind of injustice coded thanks to those inputs."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 209, "src_lang": "cs", "tgt_lang": "en", "output": "How do you personally see the possibility of regulating, monitoring, or whether a person should even try to correct it"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 210, "src_lang": "cs", "tgt_lang": "en", "output": "or give it a completely free field"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 211, "src_lang": "cs", "tgt_lang": "en", "output": "and not worry about the fact that the artificial intelligence itself is then burdened with those inputs?"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 212, "src_lang": "cs", "tgt_lang": "en", "output": "It is necessary to understand how the artificial intelligence works, that"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 213, "src_lang": "cs", "tgt_lang": "en", "output": "it basically has nothing else available than the inputs that we give as people,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 214, "src_lang": "cs", "tgt_lang": "en", "output": "so it learns from it. What has emerged somewhere"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 215, "src_lang": "cs", "tgt_lang": "en", "output": ", typically, are some data that people create, provide."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 216, "src_lang": "cs", "tgt_lang": "en", "output": "So it's not like artificial intelligence itself learns its own prejudices."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 217, "src_lang": "cs", "tgt_lang": "en", "output": "It just copies the prejudices that people have had for a long time."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 218, "src_lang": "cs", "tgt_lang": "en", "output": "So it's not really bad."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 219, "src_lang": "cs", "tgt_lang": "en", "output": "It's good and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 220, "src_lang": "cs", "tgt_lang": "en", "output": "it's so good that it copies our smart things, including our mistakes."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 221, "src_lang": "cs", "tgt_lang": "en", "output": "So this is something that is happening."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 222, "src_lang": "cs", "tgt_lang": "en", "output": "Of course, there is a lot of research now on how to make it better than people."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 223, "src_lang": "cs", "tgt_lang": "en", "output": "This means that it should be as smart as people and not have bad prejudices. Actually,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 224, "src_lang": "cs", "tgt_lang": "en", "output": "Tomáš might know a bit about it."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 225, "src_lang": "cs", "tgt_lang": "en", "output": "I think we should definitely try to fix the problems here, but"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 226, "src_lang": "cs", "tgt_lang": "en", "output": "the question is how to do it technologically, because the most advanced methods, which are neural networks today, are difficult to interpret to"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 227, "src_lang": "cs", "tgt_lang": "en", "output": "a large extent. We don't know exactly how the neural network represents the data that got into it."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 228, "src_lang": "cs", "tgt_lang": "en", "output": "While if we decide something about some people somewhere, some group of those people is in. At this point, it is systematically discriminated against, so it"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 229, "src_lang": "cs", "tgt_lang": "en", "output": "is some kind of pattern"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 230, "src_lang": "cs", "tgt_lang": "en", "output": "and it will of course be transferred to the network."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 231, "src_lang": "cs", "tgt_lang": "en", "output": "If the network sees in the data that this group of people simply does not get to the schools, it will assign a lower probability to them,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 232, "src_lang": "cs", "tgt_lang": "en", "output": "without examining whether the reason why these people do not get there is some kind of factual or it is some kind of prejudice."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 233, "src_lang": "cs", "tgt_lang": "en", "output": "This is not in the data."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 234, "src_lang": "cs", "tgt_lang": "en", "output": "How to get rid of it is a complex question."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 235, "src_lang": "cs", "tgt_lang": "en", "output": "Because, among other things, it is not so simple that a person just says, I will not give you the things that cause these prejudices."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 236, "src_lang": "cs", "tgt_lang": "en", "output": "Because all the data is eventually correlated in some way. And"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 237, "src_lang": "cs", "tgt_lang": "en", "output": "there are studies on this,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 238, "src_lang": "cs", "tgt_lang": "en", "output": "it turns out that even if they take, for example, biographies that were somehow tried to be analyzed automatically,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 239, "src_lang": "cs", "tgt_lang": "en", "output": "and from those biographies, of course, data about the race of the person"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 240, "src_lang": "cs", "tgt_lang": "en", "output": "are erased, but it can be retracted from those neural networks,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 241, "src_lang": "cs", "tgt_lang": "en", "output": "the information gets there, even if it is not explicitly written there."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 242, "src_lang": "cs", "tgt_lang": "en", "output": "How to do it so that it is not there at all is a difficult research problem. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 243, "src_lang": "cs", "tgt_lang": "en", "output": "maybe there will be some hack on Hakaton that will contribute to that. Artificial intelligence has gotten rid of our prejudices, imperfect organic cracks, meat, bones,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 244, "src_lang": "cs", "tgt_lang": "en", "output": "or as he described it, chucklers, when"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 245, "src_lang": "cs", "tgt_lang": "en", "output": "you look at a person from the inside, compared to the beauty of machines."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 246, "src_lang": "cs", "tgt_lang": "en", "output": "So it is one of the topics."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 247, "src_lang": "cs", "tgt_lang": "en", "output": "Before we get to the questions, I would like to ask David, maybe now,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 248, "src_lang": "cs", "tgt_lang": "en", "output": "how he will say,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 249, "src_lang": "cs", "tgt_lang": "en", "output": "because Daniel said at the beginning that he will start testing, I think, on Monday,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 250, "src_lang": "cs", "tgt_lang": "en", "output": "but you have already seen the script, it exists,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 251, "src_lang": "cs", "tgt_lang": "en", "output": "maybe he got rid of the actor, how he will say, pronounce words that he did not write. Living author, but author blinking, shining and flashing."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 252, "src_lang": "cs", "tgt_lang": "en", "output": "I think that first of all it will be harder for them to learn, because the follow-up is not always entirely logical in the replies."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 253, "src_lang": "cs", "tgt_lang": "en", "output": "And the second thing, which is specific to the dialogues generated by the computer, is that the robot is a bit like a child"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 254, "src_lang": "cs", "tgt_lang": "en", "output": "or autistic in the sense that it does not expect what is said to be true."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 255, "src_lang": "cs", "tgt_lang": "en", "output": "So we will have to interpret the text. To introduce tricks so that it is interesting for the actors,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 256, "src_lang": "cs", "tgt_lang": "en", "output": "so that it can be justified that they say something like that"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 257, "src_lang": "cs", "tgt_lang": "en", "output": ", because often the most interesting thing about the theater is that something is said differently and something is thought differently. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 258, "src_lang": "cs", "tgt_lang": "en", "output": "that will probably be our biggest task of interpretation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 259, "src_lang": "cs", "tgt_lang": "en", "output": "So I am looking now if we have any questions,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 260, "src_lang": "cs", "tgt_lang": "en", "output": "but I don't see any. If you can"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 261, "src_lang": "cs", "tgt_lang": "en", "output": "correct me, if we have a question."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 262, "src_lang": "cs", "tgt_lang": "en", "output": "I don't see any."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 263, "src_lang": "cs", "tgt_lang": "en", "output": "We don't see any, so please ask,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 264, "src_lang": "cs", "tgt_lang": "en", "output": "you still have 9 minutes."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 265, "src_lang": "cs", "tgt_lang": "en", "output": "9 minutes to ask the team here. Which is behind the"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 266, "src_lang": "cs", "tgt_lang": "en", "output": "theater, the team is wider, but several representatives, let's"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 267, "src_lang": "cs", "tgt_lang": "en", "output": "say mathematicians or psycholinguists, or whatever you were called recently in the Guardian of Psycholinguists from"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 268, "src_lang": "cs", "tgt_lang": "en", "output": "Asimov and playwrights, like David here."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 269, "src_lang": "cs", "tgt_lang": "en", "output": "So I'll ask another thing related to the process of creation and transfer, let's say, to the theatre."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 270, "src_lang": "cs", "tgt_lang": "en", "output": "It's the case that the whole game, which I take as a title, some notes, The role and the structure of those negotiations, the whole thing"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 271, "src_lang": "cs", "tgt_lang": "en", "output": "is written by artificial intelligence, or what is the share of"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 272, "src_lang": "cs", "tgt_lang": "en", "output": "a person or a playwright in the final performance that we will see on February 26th in a month here at the Šlondó Theatre? If I had"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 273, "src_lang": "cs", "tgt_lang": "en", "output": "to calculate it, the share of a playwright is probably not 10%,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 274, "src_lang": "cs", "tgt_lang": "en", "output": "but it is the case that even the playwright's share, when writing by a living author, is such because the playwright gives some impulses."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 275, "src_lang": "cs", "tgt_lang": "en", "output": "Specifically, the game consists of several situations, dialogues. And the input was practically just one short scenic remark,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 276, "src_lang": "cs", "tgt_lang": "en", "output": "which actually presented the basic settings of the situation, the characters and the first two lines of the dialogue."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 277, "src_lang": "cs", "tgt_lang": "en", "output": "And the rest was generated by the computer, with the fact that sometimes we crossed it out or so,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 278, "src_lang": "cs", "tgt_lang": "en", "output": "or we rejected it, where the dialogue was heading, he started to generate further."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 279, "src_lang": "cs", "tgt_lang": "en", "output": "This is quite standard management, dramatics to write the game. The only thing we have"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 280, "src_lang": "cs", "tgt_lang": "en", "output": "the greatest intervention in is that of course the software is still in the phase when it can't, or it hasn't appeared yet that it can."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 281, "src_lang": "cs", "tgt_lang": "en", "output": "A bigger story was to come, so the overall scenario"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 282, "src_lang": "cs", "tgt_lang": "en", "output": "depends on how we put together the generated situations,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 283, "src_lang": "cs", "tgt_lang": "en", "output": "but this is a completely common method of collage, assembly,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 284, "src_lang": "cs", "tgt_lang": "en", "output": "which also happens with the author's text,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 285, "src_lang": "cs", "tgt_lang": "en", "output": "so we treat it like an author who is obedient and when we reject something, he listens to us."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 286, "src_lang": "cs", "tgt_lang": "en", "output": "This was basically an idea we had at the beginning, that there were already various texts that were created with the share of artificial intelligence, where the share was 10%, 120%. So"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 287, "src_lang": "cs", "tgt_lang": "en", "output": "we thought, this is no longer interesting, so"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 288, "src_lang": "cs", "tgt_lang": "en", "output": "let's give artificial intelligence the biggest word"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 289, "src_lang": "cs", "tgt_lang": "en", "output": "and we agreed that the interventions will be minimal"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 290, "src_lang": "cs", "tgt_lang": "en", "output": "and are actually at the level of, as David said, how a person would interfere with the text that is from a human author."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 291, "src_lang": "cs", "tgt_lang": "en", "output": "And it is true that so far it generates individual scenes independently of each other and"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 292, "src_lang": "cs", "tgt_lang": "en", "output": "GPT generates the text linearly, but the project continues and this year we plan to improve this,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 293, "src_lang": "cs", "tgt_lang": "en", "output": "to make hierarchical generation, which would first generate. Some summary of the whole game,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 294, "src_lang": "cs", "tgt_lang": "en", "output": "and then it would be divided into the individual scenes, so that the intelligence would have decision-making power over the structure of the game."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 295, "src_lang": "cs", "tgt_lang": "en", "output": "We'll see how it turns out."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 296, "src_lang": "cs", "tgt_lang": "en", "output": "If you have a question, write, now"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 297, "src_lang": "cs", "tgt_lang": "en", "output": "you have the last opportunity to ask SLEK, because otherwise we have the last five minutes and exactly"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 298, "src_lang": "cs", "tgt_lang": "en", "output": "in five minutes the QA block will start on individual topics, where the topic of artificial creative intelligence will also be discussed in more detail with Rudolf."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 299, "src_lang": "cs", "tgt_lang": "en", "output": "But if you are interested in the project, The theater, which will have its premiere in the Švande Theatre on February 26,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 300, "src_lang": "cs", "tgt_lang": "en", "output": "that is in a month, at 7 p.m. there will be a stream from Švande Theatre on the website théater.com. Everyone is invited to watch it,"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 301, "src_lang": "cs", "tgt_lang": "en", "output": "it will be a world premiere."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 302, "src_lang": "cs", "tgt_lang": "en", "output": "According to our knowledge, such a theater game of standard format has not yet been created anywhere else."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 303, "src_lang": "cs", "tgt_lang": "en", "output": "It will be a theater game that will be followed by a discussion. I'm here with my colleagues"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 304, "src_lang": "cs", "tgt_lang": "en", "output": "and I think it will be a unique opportunity to assess where the machine creativity with some minimal cooperation with humans is today"}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 305, "src_lang": "cs", "tgt_lang": "en", "output": "and whether it can make you have a fun, dramatic, interesting evening."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 306, "src_lang": "cs", "tgt_lang": "en", "output": "So, I would like to thank the guests David, Rudolf and Tomáš for spending half an hour discussing artificial intelligence in dramatic creation."}
+{"dataset_id": "iwslt2024_cs_devset", "sample_id": 307, "src_lang": "cs", "tgt_lang": "en", "output": "And I would ask the director if she would let us have a teaser that will attract you all to the premiere on February 26."}
