@@ -68,6 +68,7 @@ with open(ref_manifest) as f:
             k: segments[k][i] for k in segments.keys()
           }
        }
+       # every annotation task will contain appx 1 minute of audio:
        if duration_buffer + duration > 60:
           data.append([])
           duration_buffer = 0
