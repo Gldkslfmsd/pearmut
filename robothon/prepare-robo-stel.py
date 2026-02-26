@@ -1,6 +1,25 @@
 import sys
 import json
 
+# Usage:
+
+# 0) ensure that files on the following path exist, or change the paths in this script to your paths:
+
+#   Reference:
+# - ref/robothon-short.jsonl : input in hearing2translate format, converted from iwslt2024_cs_en_dev.zip , removed segments that had empty target. 
+#    - only the textfields are needed, the src_audio_path does not matter
+
+#   Source audio:
+# - robothon/short-audio/ : contains segmented audio wavs, named like robothon-debate_1.wav . They origin in the IWSLT24 dev, split by timestamps in this dev, removed segments that had empty target.
+    # (TODO for next time: would be better to include gaps between the segments)
+
+#   System outputs:
+# - selected/*jsonl : candidate system outputs in hearing2translate output jsonl format, segmented by mweralign to match the reference segments
+
+# 1) python3 prepare-robo-stel.py > ../campaign.json
+
+# 2) cd .. ; pearmut add campaign.json
+
 campaign = {
   "info": {
     "assignment": "task-based",
@@ -31,7 +50,6 @@ for n,fn in SYSTEMS:
             segments[n].append(d["output"])
 
 ref_manifest = "ref/robothon-short.jsonl"
-H2T_DATADIR = "/lnet/work/people/machacek/uedin/systems/hearing2translate/manifests/"
 
 data = [[]]
 duration_buffer = 0

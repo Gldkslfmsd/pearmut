@@ -1,0 +1,45 @@
+{
+  "robothon-stel-1": {
+    "dm": {
+      "progress": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": 1771519520.622,
+      "time_end": 1771603361.766,
+      "time": 7592.408999204636,
+      "url": "annotate?campaign_id=robothon-stel-1&user_id=dm",
+      "token_correct": "03f8c58e45",
+      "token_incorrect": "4d4965049b"
+    }
+  }
+}
