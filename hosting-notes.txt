@@ -1,0 +1,73 @@
+1) Hosting virtual machine:
+- the user who has access to úfal cluster, add this to ~/.ssh/config on local laptop:
+
+Host=pearmut
+ProxyCommand ssh -q quest nc -q0 10.10.51.198 22
+User=machacek
+
+- (those who don't have úfal cluster, we can ask IT for alternative way)
+
+2) Setup nginx:
+
+- the user who is sudo on the hosting VM: edit
+
+/etc/nginx/sites-available$ sudo vi default
+
+- add/edit sections like this:
+
+        location /stel/ {
+            proxy_pass http://127.0.0.1:9001/;
+            proxy_http_version 1.1;
+
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+            # WebSocket support (often needed for dashboards)
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+        }
+
+- it maps URL endpoint to port on local machine. At this moment, on 13.4.2026, there are:
+
+/	8001
+/stel/	9001
+/jsalt/	9002
+/debug/	9003
+/demo/	9004
+/vilda/	9005
+
+- then:
+
+ sudo nginx -t
+(and check if it's OK, or fix and repeat)
+
+ sudo systemctl reload nginx
+
+3) Run pearmut instance:
+
+- as a user on pearmut VM:
+- clone pearmut repo, switch to branch
+- create virtual python environment, install pearmut and front-end in npm
+- pearmut add campaing.json
+
+- then, look at the table of endpoints + open ports, and run pearmut like this:
+
+pearmut run --server https://quest.ms.mff.cuni.cz/pearmut/stel --port 9001
+
+	- where https://quest.ms.mff.cuni.cz/pearmut/ is the mandatory URL prefix
+	- stel is URL endpoint
+	- 9001 is port corresponding to the endpoint
+
+- then, you can stop this process (ctrl+c) and run it again with nohup, or with a script with a loop that restarts it after every crash
+
+
+4) Access pearmut in a browser:
+- anyone on the Internet:
+- use the link that is provided by pearmut run, e.g.:
+
+https://quest.ms.mff.cuni.cz/pearmut/stel/dashboard?token_main=78bf10d222
+
+- if it works, you get some INFO output in pearmut run, and a nice dashboard page in the browser
+- often errors:
+	- 502 Bad Gateway -> the pearmut run process is not running, or wrong url endpoint
