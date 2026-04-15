@@ -1,0 +1,902 @@
+{
+  "info": {
+    "assignment": "task-based",
+    "protocol": "STEL",
+    "assets": {
+      "source": "../pearmut/enhe-acl6060/short-audio/",
+      "destination": "assets/robothon"
+    },
+    "users": [
+      "dm"
+    ]
+  },
+  "campaign_id": "esa_validation",
+  "data": [
+    [
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 1,
+          "src": "<audio controls=\"\" src=\"assets/robothon/330.wav\"></audio><br> SOURCE: Thank you.<br>REFERENCE: ",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "",
+            "simul-whisper+gemma2-9b-it": ""
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 2,
+          "src": "<audio controls=\"\" src=\"assets/robothon/331.wav\"></audio><br> SOURCE: Hello. My name is Asaf Harari.<br>REFERENCE: שלום, שמי הוא אסף הררי,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "שלום, שמי הוא אסף הררי,",
+            "simul-whisper+gemma2-9b-it": " שלום. קוראים לי אסף הראל."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 3,
+          "src": "<audio controls=\"\" src=\"assets/robothon/332.wav\"></audio><br> SOURCE: And I will present our paper, Few-Shot Tabular Data Enrichment Using Fine-Tuned Transformers Architectures.<br>REFERENCE: ואני אציג את המאמר שלנו, Few-Shot Tabular Data Enrichment Using Fine-Tuning Transformers Architectures.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואני אציג את המאמר שלנו, Few-Shot Tabular Data Enrichment Using Fine-Tuning Transformers Architectures.",
+            "simul-whisper+gemma2-9b-it": "ואני אציג את המאמר שלנו, \"העשרת נתונים טבלאיים ב-Few Shot באמצעות Fine-Tuning של מבני Transformers\"."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 4,
+          "src": "<audio controls=\"\" src=\"assets/robothon/333.wav\"></audio><br> SOURCE: Data scientists analyze data and mainly focus on the manipulating the data's existing features.<br>REFERENCE: מדעני נתונים מנתחים נתונים ובעיקר מתמקדים בתמרון תכונות הנתונים הקיימות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "מדעני נתונים מנתחים נתונים ובעיקר מתמקדים בתמרון תכונות הנתונים הקיימות.",
+            "simul-whisper+gemma2-9b-it": "זה מדען המנתח נתונים ומוקדש בעיקר לניפוח המאפיינים הקיימים של הנתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 5,
+          "src": "<audio controls=\"\" src=\"assets/robothon/334.wav\"></audio><br> SOURCE: But sometimes, these features are limited.<br>REFERENCE: אבל לפעמים תכונות אלו מוגבלות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל לפעמים תכונות אלו מוגבלות.",
+            "simul-whisper+gemma2-9b-it": "אבל לפעמים מאפיינים אלה מוגבלים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 6,
+          "src": "<audio controls=\"\" src=\"assets/robothon/335.wav\"></audio><br> SOURCE: Feature generation using another data source may add substantial information.<br>REFERENCE: יצירת תכונות באמצעות מקור נתונים אחר עשויה להוסיף מידע משמעותי.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "יצירת תכונות באמצעות מקור נתונים אחר עשויה להוסיף מידע משמעותי.",
+            "simul-whisper+gemma2-9b-it": "ייצור מאפיינים באמצעות מקור נתונים אחר יכול להוסיף מידע משמעותי."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 7,
+          "src": "<audio controls=\"\" src=\"assets/robothon/336.wav\"></audio><br> SOURCE: Our research goal is automatic tabular data enrichment using external sources' free text.<br>REFERENCE: מטרת המחקר שלנו היא עשרות נתונים טבולאריים אוטומטיים באמצעות טקסט חופשי ממקורות חיצוניים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "מטרת המחקר שלנו היא עשרות נתונים טבולאריים אוטומטיים באמצעות טקסט חופשי ממקורות חיצוניים.",
+            "simul-whisper+gemma2-9b-it": "מטרת המחקר שלנו היא אוטומציה של העשרת נתונים טבלאיים, באמצעות מקורות חיצוניים טקסט חופשי."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 8,
+          "src": "<audio controls=\"\" src=\"assets/robothon/337.wav\"></audio><br> SOURCE: Assume we have a tabular dataset and a knowledge base.<br>REFERENCE: נניח שיש לנו סט נתונים טבולאריים ובסיס ידע.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "נניח שיש לנו סט נתונים טבולאריים ובסיס ידע.",
+            "simul-whisper+gemma2-9b-it": "נניח שיש לנו קבוצת נתונים טבלאית. וידע."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 9,
+          "src": "<audio controls=\"\" src=\"assets/robothon/338.wav\"></audio><br> SOURCE: We need an automatic process which involves entity linking and text analysis to extract new features from the knowledge base's free text.<br>REFERENCE: אנו זקוקים לתהליך אוטומטי שיכול לכלול קישור ישויות וניתוח טקסט כדי לחלץ תכונות חדשות מטקסט הידע.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אנו זקוקים לתהליך אוטומטי שיכול לכלול קישור ישויות וניתוח טקסט כדי לחלץ תכונות חדשות מטקסט הידע.",
+            "simul-whisper+gemma2-9b-it": "אנחנו זקוקים לתוכנית אוטומטית,זקוקים לתוכנית אוטומטית, אשר כוללת, אתכם  אל הקישור性和 ניתוח הטקסט, כדי להפיק תכונות חדשות עבור בסיס הידעטקסט חופשי."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 10,
+          "src": "<audio controls=\"\" src=\"assets/robothon/339.wav\"></audio><br> SOURCE: Our framework FeSTE is exactly this automatic process.<br>REFERENCE: המסגרת שלנו מתחילה בדיוק בתהליך האוטומטי הזה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "המסגרת שלנו מתחילה בדיוק בתהליך האוטומטי הזה.",
+            "simul-whisper+gemma2-9b-it": "החברים שלנו. ראשון, זה בדיוק תהליךאוטומטי."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 11,
+          "src": "<audio controls=\"\" src=\"assets/robothon/340.wav\"></audio><br> SOURCE: So let's see an example in a dataset fed into FeSTE.<br>REFERENCE: אז בואו נראה דוגמה. בסט נתונים, מוזנים ל-FAST.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז בואו נראה דוגמה. בסט נתונים, מוזנים ל-FAST.",
+            "simul-whisper+gemma2-9b-it": "אז נגמר הדוגמה. אמרתי, זה זרם ל-FAST."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 12,
+          "src": "<audio controls=\"\" src=\"assets/robothon/341.wav\"></audio><br> SOURCE: In this example, the dataset is university dataset.<br>REFERENCE: בדוגמה הזו, סט הנתונים הוא סט נתונים של אוניברסיטאות,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בדוגמה הזו, סט הנתונים הוא סט נתונים של אוניברסיטאות,",
+            "simul-whisper+gemma2-9b-it": "בדוגמה הזאת, קבוצת הנתונים היא קבוצת נתונים של אוניברסיטה,"
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 13,
+          "src": "<audio controls=\"\" src=\"assets/robothon/342.wav\"></audio><br> SOURCE: When its goal is to classify universities into low ranking universities and high-ranking universities.<br>REFERENCE: כאשר המטרה היא לסווג אוניברסיטאות לאוניברסיטאות בעלות דירוג נמוך ואוניברסיטאות בעלות דירוג גבוה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאשר המטרה היא לסווג אוניברסיטאות לאוניברסיטאות בעלות דירוג נמוך ואוניברסיטאות בעלות דירוג גבוה.",
+            "simul-whisper+gemma2-9b-it": "כאשר המטרה שלה היא לסווג אוניברסיטאות לאוניברסיטאות נמוכות דירוג ואוניברסיטאות גבוהות דירוג."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 14,
+          "src": "<audio controls=\"\" src=\"assets/robothon/343.wav\"></audio><br> SOURCE: As knowledge base, we use Wikipedia.<br>REFERENCE: כבסיס ידע, אנו משתמשים בוויקיפדיה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כבסיס ידע, אנו משתמשים בוויקיפדיה.",
+            "simul-whisper+gemma2-9b-it": "כבסיסידע, אנחנו משתמשים בויקיפדיה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 15,
+          "src": "<audio controls=\"\" src=\"assets/robothon/344.wav\"></audio><br> SOURCE: The first phase of FeSTE is entity linking.<br>REFERENCE: השלב הראשון של FAST הוא קישור ישויות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "השלב הראשון של FAST הוא קישור ישויות.",
+            "simul-whisper+gemma2-9b-it": "הפאזה הראשונה של FAST היא קישור ישויות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 16,
+          "src": "<audio controls=\"\" src=\"assets/robothon/345.wav\"></audio><br> SOURCE: When each entity, in this example the university name, is linked to an entity within the knowledge base.<br>REFERENCE: כאשר כל ישות, בדוגמה הזו, שם האוניברסיטה, מקושרת לישות בתוך בסיס הידע.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאשר כל ישות, בדוגמה הזו, שם האוניברסיטה, מקושרת לישות בתוך בסיס הידע.",
+            "simul-whisper+gemma2-9b-it": "כאשר כל ישות, במקרה הזה, שם האוניברסיטה, מקושרת, לישות בתוךבתוך בסיס הידע."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 17,
+          "src": "<audio controls=\"\" src=\"assets/robothon/346.wav\"></audio><br> SOURCE: And and the text of the entities of the knowledge base is extracted and added to the dataset.<br>REFERENCE: והטקסט של ישויות בסיס הידע מוצא ומוסף לסט הנתונים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "והטקסט של ישויות בסיס הידע מוצא ומוסף לסט הנתונים.",
+            "simul-whisper+gemma2-9b-it": "וה-- וה-- טקסט של האובייקטים של בסיס הידע, מופק, ומוסיף-- לקבוצת הנתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 18,
+          "src": "<audio controls=\"\" src=\"assets/robothon/347.wav\"></audio><br> SOURCE: In this example, the text is the Wikipedia page's abstract.<br>REFERENCE: בדוגמה הזו, הטקסט הוא תקציר דף הוויקיפדיה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בדוגמה הזו, הטקסט הוא תקציר דף הוויקיפדיה.",
+            "simul-whisper+gemma2-9b-it": "במקרה הזה, הטקסט הוא-- תקציר עמוד ויקיפדיה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 19,
+          "src": "<audio controls=\"\" src=\"assets/robothon/348.wav\"></audio><br> SOURCE: Now, we need to generate or extract features from the retrieved text.<br>REFERENCE: עכשיו אנו צריכים לייצר או לחלץ תכונות מהטקסט שהושב.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "עכשיו אנו צריכים לייצר או לחלץ תכונות מהטקסט שהושב.",
+            "simul-whisper+gemma2-9b-it": "עכשיו אנחנו צריכים לייצר או להפיק תכונותמהתקיפה של \"הריטרייב\"."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 20,
+          "src": "<audio controls=\"\" src=\"assets/robothon/349.wav\"></audio><br> SOURCE: So, we need to ah feature extraction phase ah which includes text analysis.<br>REFERENCE: אז אנו צריכים שלב חליצת תכונות שכולל ניתוח טקסט.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז אנו צריכים שלב חליצת תכונות שכולל ניתוח טקסט.",
+            "simul-whisper+gemma2-9b-it": "אז אנחנוצריכים, אנחנו צריכים בשלב חיתוך תכונות,  ואנחנו יכולים לכלול ניתוח טקסט."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 21,
+          "src": "<audio controls=\"\" src=\"assets/robothon/350.wav\"></audio><br> SOURCE: And this is the main novelty of this paper and I will deep dive into it in the next slides.<br>REFERENCE: וזו החידוש העיקרי של מאמר זה, ואני אעמיק לתוכו בשקפים הבאים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "וזו החידוש העיקרי של מאמר זה, ואני אעמיק לתוכו בשקפים הבאים.",
+            "simul-whisper+gemma2-9b-it": "וזה היכולת העיקרית של המאמר הזה. ואני אצלע לתוך זה בשלבים הבאים."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 22,
+          "src": "<audio controls=\"\" src=\"assets/robothon/351.wav\"></audio><br> SOURCE: After the feature extraction phase, there is a feature generation phase when we use the extracted features to generate a small number of new features.<br>REFERENCE: אחרי שלב חליצת התכונות, יש שלב יצירת תכונות, כאשר אנו משתמשים בתכונות המופקות כדי לייצר מספר קטן של תכונות חדשות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אחרי שלב חליצת התכונות, יש שלב יצירת תכונות, כאשר אנו משתמשים בתכונות המופקות כדי לייצר מספר קטן של תכונות חדשות.",
+            "simul-whisper+gemma2-9b-it": "אחרישלב חיתוך התכונות, ה-  האם יש שלב ייצור תכונות כאשר אנו משתמשים בתכונה המופקרת לייצור מספר קטן של תכונות חדשות?"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 23,
+          "src": "<audio controls=\"\" src=\"assets/robothon/352.wav\"></audio><br> SOURCE: First generate ah features in the number of classes of the original dataset.<br>REFERENCE: ראשון, יוצרים... תכונות במספר המחלקות של סט הנתונים המקורי.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ראשון, יוצרים... תכונות במספר המחלקות של סט הנתונים המקורי.",
+            "simul-whisper+gemma2-9b-it": "מהר.ולא. כן.  תכונות במספר מחלקות של קבוצת הנתונים המקורית."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 24,
+          "src": "<audio controls=\"\" src=\"assets/robothon/353.wav\"></audio><br> SOURCE: In this example, the original dataset has two classes.<br>REFERENCE: בדוגמה הזו, סט הנתונים המקורי הוא בעל שתי מחלקות,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בדוגמה הזו, סט הנתונים המקורי הוא בעל שתי מחלקות,",
+            "simul-whisper+gemma2-9b-it": "במקרה זה, קבוצת הנתונים המקורית מכילה שתי מחלקות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 25,
+          "src": "<audio controls=\"\" src=\"assets/robothon/354.wav\"></audio><br> SOURCE: So, FeSTE generates two new features.<br>REFERENCE: אז FAST יוצר שתי תכונות חדשות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז FAST יוצר שתי תכונות חדשות.",
+            "simul-whisper+gemma2-9b-it": "אז, תחילה, יוצרים שתי מחלקות. אז, תחילה, יוצרים שתי תכונות חדשות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 26,
+          "src": "<audio controls=\"\" src=\"assets/robothon/355.wav\"></audio><br> SOURCE: But if the dataset has five classes, FeSTE generates five new features.<br>REFERENCE: אבל אם סט הנתונים הוא בעל חמש מחלקות, FAST יוצר חמש תכונות חדשות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל אם סט הנתונים הוא בעל חמש מחלקות, FAST יוצר חמש תכונות חדשות.",
+            "simul-whisper+gemma2-9b-it": "אבל אם קבוצת הנתונים מכילה חמש מחלקות, תחילה יוצרים חמש תכונות חדשות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 27,
+          "src": "<audio controls=\"\" src=\"assets/robothon/356.wav\"></audio><br> SOURCE: Each feature represents the likelihood for each class.<br>REFERENCE: כל תכונה מייצגת את ההסתברות לכל מחלקה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כל תכונה מייצגת את ההסתברות לכל מחלקה.",
+            "simul-whisper+gemma2-9b-it": "כלתכונה,  Please note: Iam only translating what I hear. I have no context about the situation or the meaning of the phrase."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 28,
+          "src": "<audio controls=\"\" src=\"assets/robothon/357.wav\"></audio><br> SOURCE: To analyze the text, we use the current state-of-the-art of text analysis, which are transformer based language models as BERT, GPT,  XLNet and etc.<br>REFERENCE: כדי לנתח את הטקסט, אנו משתמשים במצב הנוכחי של ניתוח טקסט, שהוא מודלי שפה מבוססי טרנספורמרים כמו BERT, GPT, XML, וכו'.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כדי לנתח את הטקסט, אנו משתמשים במצב הנוכחי של ניתוח טקסט, שהוא מודלי שפה מבוססי טרנספורמרים כמו BERT, GPT, XML, וכו'.",
+            "simul-whisper+gemma2-9b-it": "לניתוח הטקסט, אנו משתמשים במצב הטכנולוגיה המתקדם ביותר של ניתוח טקסט, אשר משנים מבוססי שפה כמו BERT, GPT, XNLs. ועוד."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 29,
+          "src": "<audio controls=\"\" src=\"assets/robothon/358.wav\"></audio><br> SOURCE: It is but it is not likely that we can train language models using the input datasets.<br>REFERENCE: אבל אין סיכוי שנוכל לאמן מודל שפה באמצעות סט הנתונים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל אין סיכוי שנוכל לאמן מודל שפה באמצעות סט הנתונים.",
+            "simul-whisper+gemma2-9b-it": "זה כן, אבל זה לא סביר שאנו נוכל לאמן מודלים של שפה באמצעות קבצי הנתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 30,
+          "src": "<audio controls=\"\" src=\"assets/robothon/359.wav\"></audio><br> SOURCE: So a naive approach will be ah target task finetuning.<br>REFERENCE: אז הגישה הנאיבית תהיה עדיפות עיבוד.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז הגישה הנאיבית תהיה עדיפות עיבוד.",
+            "simul-whisper+gemma2-9b-it": "אז טוב.  אז כשאני אפגוש אפילו, אהיה מטרה.אהיה מטרה למשימה מדויקת."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 31,
+          "src": "<audio controls=\"\" src=\"assets/robothon/360.wav\"></audio><br> SOURCE: So, in the feature extraction phase, we can download pretrained language models, finetune the language model over the target dataset.<br>REFERENCE: בשלב חליצת התכונות, אנו יכולים להוריד מודל שפה מוכן, לעדכן את המודל השפה על סט הנתונים היעד,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בשלב חליצת התכונות, אנו יכולים להוריד מודל שפה מוכן, לעדכן את המודל השפה על סט הנתונים היעד,",
+            "simul-whisper+gemma2-9b-it": "אה,אז, אה,  בשלב חיתוך התכונות, נוכל להוריד מודל שפה מראש-למידה. להתאים את מודל השפה על קבוצת הנתונים המיועדת."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 32,
+          "src": "<audio controls=\"\" src=\"assets/robothon/361.wav\"></audio><br> SOURCE: In this example to finetune the language model, to classify ah to classify text into classes, abstract into classes, low or high.<br>REFERENCE: ",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "",
+            "simul-whisper+gemma2-9b-it": "במקרה הזה, להתאים את מודל השפה, זה כדי לקטלג, לקטלג טקסט, ולשיעורים. להכליל לשיעורים, נמוך או גבוה.גבוה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 33,
+          "src": "<audio controls=\"\" src=\"assets/robothon/362.wav\"></audio><br> SOURCE: Receive the language model output, which is the likelihood for each class and use as new features.<br>REFERENCE: ולקבל את פלט המודל, שהוא ההסתברות לכל מחלקה, ולהשתמש בו כתכונות חדשות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ולקבל את פלט המודל, שהוא ההסתברות לכל מחלקה, ולהשתמש בו כתכונות חדשות.",
+            "simul-whisper+gemma2-9b-it": ""
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 34,
+          "src": "<audio controls=\"\" src=\"assets/robothon/363.wav\"></audio><br> SOURCE: The problem with this approach is datasets may have few distinct entities / texts.<br>REFERENCE: הבעיה עם גישה זו היא שסטי נתונים עשויים להכיל מספר קטן של ישויות טקסט.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הבעיה עם גישה זו היא שסטי נתונים עשויים להכיל מספר קטן של ישויות טקסט.",
+            "simul-whisper+gemma2-9b-it": "ואז  - הבעיה עם גישה זו היא שהסט נתונים עשוי לכלול מספר מועט של ישויותמעט ישויות טקסט ייחודיות. - הבעיה עם גישה זו היא שהסט נתונים עשוי לכלול מעט ישויות טקסט ייחודיות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 35,
+          "src": "<audio controls=\"\" src=\"assets/robothon/364.wav\"></audio><br> SOURCE: In our experiment, almost half of the datasets contain less than four hundred samples and the smallest dataset contain thirty five samples in its, in a training set.<br>REFERENCE: בניסויים שלנו, כמעט מחצית מסטי הנתונים מכילים פחות מ-400 דוגמאות, והסט הקטן ביותר מכיל 35 דוגמאות בלבד.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בניסויים שלנו, כמעט מחצית מסטי הנתונים מכילים פחות מ-400 דוגמאות, והסט הקטן ביותר מכיל 35 דוגמאות בלבד.",
+            "simul-whisper+gemma2-9b-it": "בניסוי שלנו, כמעט מחצית מהסטים של נתונים כללו פחות מ-400 דגימות, והסט הקטן ביותר הכיל... 34 דגימות, בסט האימון שלו... בסט האימון שלו."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 36,
+          "src": "<audio controls=\"\" src=\"assets/robothon/365.wav\"></audio><br> SOURCE: So to finetune a language model over ah this dataset will be ineffective.<br>REFERENCE: אז לעדכן את המודל השפה על סט נתונים זה יהיה לא יעיל.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז לעדכן את המודל השפה על סט נתונים זה יהיה לא יעיל.",
+            "simul-whisper+gemma2-9b-it": "אז, כדי להתאים את מודל השפה על ... על סט נתונים זה, יהיה יעיל."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 37,
+          "src": "<audio controls=\"\" src=\"assets/robothon/366.wav\"></audio><br> SOURCE: But we can use prior knowledge about pre-analyzed datasets.<br>REFERENCE: אבל אנו יכולים להשתמש בידע קודם על סטי נתונים מנותחים,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל אנו יכולים להשתמש בידע קודם על סטי נתונים מנותחים,",
+            "simul-whisper+gemma2-9b-it": "אבל אנחנו יכולים להשתמש בידע קודם על סט נתונים מראש "
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 38,
+          "src": "<audio controls=\"\" src=\"assets/robothon/367.wav\"></audio><br> SOURCE: Because FeSTE, we apply FeSTE over a multiple dataset, we can use the n minus one datasets to gather information about the n minus one datasets, and use this information when we analyze the nth dataset.<br>REFERENCE: כי FAST הוא, אנו מיישמים FAST על מספר סטי נתונים. אנו יכולים להשתמש ב- N-1 סטי נתונים כדי לאסוף מידע על N-1 סטי נתונים ולהשתמש במידע הזה כאשר אנו מנתחים את סט הנתונים ה- N.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כי FAST הוא, אנו מיישמים FAST על מספר סטי נתונים. אנו יכולים להשתמש ב- N-1 סטי נתונים כדי לאסוף מידע על N-1 סטי נתונים ולהשתמש במידע הזה כאשר אנו מנתחים את סט הנתונים ה- N.",
+            "simul-whisper+gemma2-9b-it": "מפני ש-FAST, אנחנו מתיחסים FAST על פני מספר סט נתונים. אנחנו יכולים להשתמש ב-n פחות אחד סט נתונים.ו  יחד מידע על המידע בנתח מינוס אחד ושימוש במידע הזה כשאנחנו בודקים את נתוני הדוגמה.תודה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 39,
+          "src": "<audio controls=\"\" src=\"assets/robothon/368.wav\"></audio><br> SOURCE: What we, what we suggest is to add, to add another finetuning phase.<br>REFERENCE: מה שאנו מציעים הוא להוסיף שלב עיבוד נוסף,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "מה שאנו מציעים הוא להוסיף שלב עיבוד נוסף,",
+            "simul-whisper+gemma2-9b-it": "מה שאנחנו... מה שאנחנו מציעים זה להוסיף... להוסיף שלב עיבוד נוסף,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 40,
+          "src": "<audio controls=\"\" src=\"assets/robothon/369.wav\"></audio><br> SOURCE: A preliminary multitask finetuning phase.<br>REFERENCE: שלב עיבוד רב-משימתי,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "שלב עיבוד רב-משימתי,",
+            "simul-whisper+gemma2-9b-it": "שלב עיבוד רב-משימה מוקדם."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 41,
+          "src": "<audio controls=\"\" src=\"assets/robothon/370.wav\"></audio><br> SOURCE: When you finetune the language model over the n minus one datasets.<br>REFERENCE: כאשר אנו עודכנים את המודל השפה על N-1 סטי נתונים,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאשר אנו עודכנים את המודל השפה על N-1 סטי נתונים,",
+            "simul-whisper+gemma2-9b-it": "כשאתם מעבדים את מודל השפה על n-1 קבוצות נתונים"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 42,
+          "src": "<audio controls=\"\" src=\"assets/robothon/371.wav\"></audio><br> SOURCE: And, then we execute another finetuning phase which is a target task finetuning, when you fine when we finetune the language model over the nth target dataset.<br>REFERENCE: ואז אנו מבצעים שלב עיבוד נוסף, שהוא שלב עיבוד יעד, כאשר אנו עודכנים את המודל השפה על סט הנתונים היעד.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואז אנו מבצעים שלב עיבוד נוסף, שהוא שלב עיבוד יעד, כאשר אנו עודכנים את המודל השפה על סט הנתונים היעד.",
+            "simul-whisper+gemma2-9b-it": "וה... וה... וה... ואז אנחנו... שוב, מבצעים שלב עיבוד נוסף שהוא שלב עיבוד מדויק למשימה כשאנחנו מוצאים... כשאנחנו מעבדים את מודל השפה על קבוצת הנתונים ה-n המטרה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 43,
+          "src": "<audio controls=\"\" src=\"assets/robothon/372.wav\"></audio><br> SOURCE: The state-of-the-art in multitask ah multitask finetuning called MTDNN.<br>REFERENCE: המצב הנוכחי בעיבוד רב-משימתי נקרא mtDNN.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "המצב הנוכחי בעיבוד רב-משימתי נקרא mtDNN.",
+            "simul-whisper+gemma2-9b-it": "אז,  מצב הטכנולוגיה המתקדמת במוデלי מרובת משימות,מרובים, ה Fine-tuning מרובים נקרא MT-DNN."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 44,
+          "src": "<audio controls=\"\" src=\"assets/robothon/373.wav\"></audio><br> SOURCE: In MTDNN, MTDNN maintains ah heads in the number of tasks in the training set.<br>REFERENCE: ב- mtDNN, mtDNN שומר ראשים במספר המשימות בסט האימון.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ב- mtDNN, mtDNN שומר ראשים במספר המשימות בסט האימון.",
+            "simul-whisper+gemma2-9b-it": "ב-MT-DNN, זה  MTDNN שומר... על... ראשים במספר... משימות. בסט האימון."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 45,
+          "src": "<audio controls=\"\" src=\"assets/robothon/374.wav\"></audio><br> SOURCE: So, in this example there are four tasks in the training set, so MTDNN maintain four heads as you can see at the image.<br>REFERENCE: אז בדוגמה הזו, יש ארבע משימות בסט האימון, אז mtDNN שומר ארבעה ראשים, כפי שאתם רואים בתמונה,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז בדוגמה הזו, יש ארבע משימות בסט האימון, אז mtDNN שומר ארבעה ראשים, כפי שאתם רואים בתמונה,",
+            "simul-whisper+gemma2-9b-it": "אז , אם... במקרה הזה, יש... ארבע... משימות בסט האימון, אז...MTDNN...  אמן. לשמור ארבעה ראשים. כפי שאתם רואים, התמונה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 46,
+          "src": "<audio controls=\"\" src=\"assets/robothon/375.wav\"></audio><br> SOURCE: And it samples a random batch from ah from the training set.<br>REFERENCE: והוא מדגים מדגם אקראי מסט האימון.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "והוא מדגים מדגם אקראי מסט האימון.",
+            "simul-whisper+gemma2-9b-it": "וכן. היא אוספת. לרוץ את התיק. מ. מ. מתיק האימון."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 47,
+          "src": "<audio controls=\"\" src=\"assets/robothon/376.wav\"></audio><br> SOURCE: And if they random batch belongs to a, for example single sentence classification task, it executes forward and backward paths through the first head.<br>REFERENCE: ואם המדגם האקראי שייך למשימת סיווג משפטים, הוא מבצע עבודה קדימה ואחורה דרך הראש הראשון.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואם המדגם האקראי שייך למשימת סיווג משפטים, הוא מבצע עבודה קדימה ואחורה דרך הראש הראשון.",
+            "simul-whisper+gemma2-9b-it": "ואם התיק המקרי שייך . לדוגמה, משימת הקטגוריה של סינג וסלצ'ר. היא מבצעת זוג קדימה ואחורה. דרך הראש הראשון."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 48,
+          "src": "<audio controls=\"\" src=\"assets/robothon/377.wav\"></audio><br> SOURCE: And if the random batch belongs to pairwise ranking task, it executes forward and backward path through the last head.<br>REFERENCE: ואם המדגם האקראי שייך למשימת דירוג זוגי, הוא מבצע עבודה קדימה ואחורה דרך הראש האחרון.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואם המדגם האקראי שייך למשימת דירוג זוגי, הוא מבצע עבודה קדימה ואחורה דרך הראש האחרון.",
+            "simul-whisper+gemma2-9b-it": "ואם התיק המקרי שייך למשימת דירוג זוגי. היא מבצעת זוג קדימה ואחורה. דרך .הראש האחרון."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 49,
+          "src": "<audio controls=\"\" src=\"assets/robothon/378.wav\"></audio><br> SOURCE: In our scenario, ah tabular datasets vary in the number of classes.<br>REFERENCE: בתרחיש שלנו, סט נתונים טבולארי מאומת את מספר המחלקות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "בתרחיש שלנו, סט נתונים טבולארי מאומת את מספר המחלקות.",
+            "simul-whisper+gemma2-9b-it": "בסדר.  ואני אגיד עכשיו, אתם יודעים, סטטיסטיקות טבלאיות, אנחנו רצים את מספר הקטגוריות.ואז. ואז."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 50,
+          "src": "<audio controls=\"\" src=\"assets/robothon/379.wav\"></audio><br> SOURCE: So there are many tasks.<br>REFERENCE: אז יש הרבה משימות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז יש הרבה משימות.",
+            "simul-whisper+gemma2-9b-it": "אז יש הרבה, אה, משימות. אה,אה,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 51,
+          "src": "<audio controls=\"\" src=\"assets/robothon/380.wav\"></audio><br> SOURCE: MTDNN maintained number of classes, heads, output layers.<br>REFERENCE: MTDNN שומר מספר ראשים, שכבות פלט.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "MTDNN שומר מספר ראשים, שכבות פלט.",
+            "simul-whisper+gemma2-9b-it": "ויום יומן אני הולך לדבר על איך לשמור על מספר ראשים של כיתות, שכבות פלט,"
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 52,
+          "src": "<audio controls=\"\" src=\"assets/robothon/381.wav\"></audio><br> SOURCE: And the additional, additionally MTDNN needs to initialize new heads for a new dataset with a new task.<br>REFERENCE: ובנוסף, MTDNN צריך לאתחל ראשים חדשים עבור סט נתונים חדש עם משימה חדשה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ובנוסף, MTDNN צריך לאתחל ראשים חדשים עבור סט נתונים חדש עם משימה חדשה.",
+            "simul-whisper+gemma2-9b-it": "והוספה והוספה נוספת של DNA ריק צריך להתחיל כראש חדש עבור קבוצת נתוניםקבוצת נתונים חדשה עם משימה חדשה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 53,
+          "src": "<audio controls=\"\" src=\"assets/robothon/382.wav\"></audio><br> SOURCE: Our approach, called task reformulation finetuning is, in our approach task reformulation finetuning, instead of maintaining multiple heads, we reformulate each dataset into a sentence per classification problem, which is two classes' tasks.<br>REFERENCE: הגישה שלנו נקראת עיבוד רב-משימתי מחודש, והיא... בגישה שלנו, עיבוד רב-משימתי מחודש, במקום לשמור מספר רב של ראשים, אנו מחדשים כל סט נתונים לבעיה של סיווג משפט לפי מחלקה, שהיא משימת סיווג בינארי.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הגישה שלנו נקראת עיבוד רב-משימתי מחודש, והיא... בגישה שלנו, עיבוד רב-משימתי מחודש, במקום לשמור מספר רב של ראשים, אנו מחדשים כל סט נתונים לבעיה של סיווג משפט לפי מחלקה, שהיא משימת סיווג בינארי.",
+            "simul-whisper+gemma2-9b-it": "אז,  - הアプローチ שלנו נקרא Task Reformulation Fine-tuning, אה?אה?  אנחנו בדרך. אנחנו מתקרבים לשינוי המשימה. הפעולה במקום תחזוקה של מספר ראשים, אנחנו משנים כל סט נתונים לרצף. לכל בעיה של קלאסיפיקציה, מה שאומר שזהשזה שתי קלאסיות, משימות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 54,
+          "src": "<audio controls=\"\" src=\"assets/robothon/383.wav\"></audio><br> SOURCE: So let's see an example.<br>REFERENCE: אז בואו נראה דוגמה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז בואו נראה דוגמה.",
+            "simul-whisper+gemma2-9b-it": "אז נראה דוגמה,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 55,
+          "src": "<audio controls=\"\" src=\"assets/robothon/384.wav\"></audio><br> SOURCE: Here is the our input dataset which consists of entities, features, text and classes.<br>REFERENCE: כאן הוא סט הנתונים שלנו, שמורכב מישויות, תכונות, טקסט ומחלקות,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאן הוא סט הנתונים שלנו, שמורכב מישויות, תכונות, טקסט ומחלקות,",
+            "simul-whisper+gemma2-9b-it": "הנה נתוני הכניסה שלנו אשר מורכבים מ- f-i-e-n-t's תכונות טקסט ו- classes."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 56,
+          "src": "<audio controls=\"\" src=\"assets/robothon/385.wav\"></audio><br> SOURCE: And, we reformulate the task from a classifying the text into low or high to classify the text, the abstract and the class into true or false.<br>REFERENCE: ואנו מחדשים את המשימה מסיווג הטקסט לנמוך וגבוה לסיווג הטקסט והמחלקה לאמת או שקר,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואנו מחדשים את המשימה מסיווג הטקסט לנמוך וגבוה לסיווג הטקסט והמחלקה לאמת או שקר,",
+            "simul-whisper+gemma2-9b-it": "ואנחנו נציג את המשימה מחדש מ- classifying את הטקסט ל- lower height ל- classify את הטקסט, את הע abstract ואת ה- class ל- true או false,"
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 57,
+          "src": "<audio controls=\"\" src=\"assets/robothon/386.wav\"></audio><br> SOURCE: Or in other words, we trained the language model to classify an abstract and class ah to abstract and class ah, if the abstract belongs to the class or not.<br>REFERENCE: או במילים אחרות, אנו מאמנים את המודל השפה לסווג את הטקסט והמחלקה לאמת או שקר, אם הטקסט שייך למחלקה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "או במילים אחרות, אנו מאמנים את המודל השפה לסווג את הטקסט והמחלקה לאמת או שקר, אם הטקסט שייך למחלקה.",
+            "simul-whisper+gemma2-9b-it": "או במילים אחרות. אנחנו מאמנים את מודל השפה ל- classify את הע abstract ואת ה- class. לבחור לבחור לאבטרקט ולשייך. ואם המסקנה שייכתשייכת לכיתה או לא. "
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 58,
+          "src": "<audio controls=\"\" src=\"assets/robothon/387.wav\"></audio><br> SOURCE: So the label vector in this case stays always ah which consists always with two classes.<br>REFERENCE: אז הווקטור המיוחל במקרה הזה תמיד...",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז הווקטור המיוחל במקרה הזה תמיד...",
+            "simul-whisper+gemma2-9b-it": "אז, אה, וקטור התווית במקרה הזה יציב, אה, תמיד, אה,אה,  אה, מה שכולל תמיד שתיקבוצות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 59,
+          "src": "<audio controls=\"\" src=\"assets/robothon/388.wav\"></audio><br> SOURCE: And this is the ah algorithm for our fine, reformulated finetuning approach.<br>REFERENCE: וזהו האלגוריתם לגישתנו.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "וזהו האלגוריתם לגישתנו.",
+            "simul-whisper+gemma2-9b-it": "ואז זה, אה, האלגוריתם שלנו, אה, טוב. הנוסחה היחידה שמצאה את גישת הסטיילינג."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 60,
+          "src": "<audio controls=\"\" src=\"assets/robothon/389.wav\"></audio><br> SOURCE: So let's see the full framework.<br>REFERENCE: אז בואו נראה את המסגרת המלאה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז בואו נראה את המסגרת המלאה.",
+            "simul-whisper+gemma2-9b-it": "אז נראה את התבנית המלאה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 61,
+          "src": "<audio controls=\"\" src=\"assets/robothon/390.wav\"></audio><br> SOURCE: Dataset fed into FeSTE.<br>REFERENCE: סט הנתונים מוזן ל-FAST,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "סט הנתונים מוזן ל-FAST,",
+            "simul-whisper+gemma2-9b-it": "אה, שהסט נכנס למהיר, אה,אה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 62,
+          "src": "<audio controls=\"\" src=\"assets/robothon/391.wav\"></audio><br> SOURCE: And then ah FeSTE executes entity linking phase.<br>REFERENCE: ואז FAST מבצע את שלב הקישור.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "ואז FAST מבצע את שלב הקישור.",
+            "simul-whisper+gemma2-9b-it": "ואז, אה... ביצוע מהיר לשלב הקישור."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 63,
+          "src": "<audio controls=\"\" src=\"assets/robothon/392.wav\"></audio><br> SOURCE: It ah it extracts the text from the knowledge base, which in this example is the abstract of the Wikipedia page.<br>REFERENCE: הוא מוציא את הטקסט מבסיס הידע, שבדוגמה הזו הוא תקציר דף הוויקיפדיה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הוא מוציא את הטקסט מבסיס הידע, שבדוגמה הזו הוא תקציר דף הוויקיפדיה.",
+            "simul-whisper+gemma2-9b-it": "זה... אה... (The interpreter pauses, waiting for the speaker to continue) ... מוציא את הטקסט מהבסיס של הידע, ובדוגמה הזאת זה סיכום הדף בוויקיפדיה. ואז... אה... הוא משנה את המשימה ל......מוציא את הטקסט מהבסיס של הידע, ובדוגמה הזאת זה סיכום הדף בוויקיפדיה."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 64,
+          "src": "<audio controls=\"\" src=\"assets/robothon/393.wav\"></audio><br> SOURCE: Then it reformulated the task into a pairwise sentence classification task.<br>REFERENCE: אז הוא מחדש את המשימה לבעיה של סיווג משפט לפי מחלקה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז הוא מחדש את המשימה לבעיה של סיווג משפט לפי מחלקה.",
+            "simul-whisper+gemma2-9b-it": "ואז... אה... הוא משנה את המשימה ל... משימה של קטגוריה משפטית."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 65,
+          "src": "<audio controls=\"\" src=\"assets/robothon/394.wav\"></audio><br> SOURCE: Applied the language model to the new task and the output likelihood for each class.<br>REFERENCE: אנו מיישמים את המודל השפה על המשימה החדשה, והפלט הוא ההסתברות לכל מחלקה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אנו מיישמים את המודל השפה על המשימה החדשה, והפלט הוא ההסתברות לכל מחלקה.",
+            "simul-whisper+gemma2-9b-it": "*אחה* יישמתי את מצב השפה, למשימה החדשה, והסתברות הייצוג עבור כל מחלקה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 66,
+          "src": "<audio controls=\"\" src=\"assets/robothon/395.wav\"></audio><br> SOURCE: And now that the language model is already finetuned over n minus one dataset using a preliminary multitask finetuning.<br>REFERENCE: שים לב שהמודל השפה כבר עודכן על N-1 סטי נתונים באמצעות שלב עיבוד רב-משימתי.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "שים לב שהמודל השפה כבר עודכן על N-1 סטי נתונים באמצעות שלב עיבוד רב-משימתי.",
+            "simul-whisper+gemma2-9b-it": "*אחה* תיכף, אה, מודל השפה הוא, אה,*אחה*  טוב. תודה. תודה. תודה. תודה. תודה. תודה. אני הולך להראות לכם איך לעשות את זה. ואז אנחנו משתמשים,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 67,
+          "src": "<audio controls=\"\" src=\"assets/robothon/396.wav\"></audio><br> SOURCE: Then we use the output vector of the language model as a newly generated feature in the number of classes.<br>REFERENCE: אז אנו משתמשים בווקטור הפלט של המודל השפה כתכונה חדשה במספר המחלקות.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז אנו משתמשים בווקטור הפלט של המודל השפה כתכונה חדשה במספר המחלקות.",
+            "simul-whisper+gemma2-9b-it": "אה, אה, וקטור התוצאה של, אה, מודל השפה. כ, אה, תכונה חדשה במספר הקטגוריות."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 68,
+          "src": "<audio controls=\"\" src=\"assets/robothon/397.wav\"></audio><br> SOURCE: To evaluate our framework, we use ah seventeen tabular classification datasets which vary in size, features, balance, domain and initial performance.<br>REFERENCE: כדי לבדוק את המסגרת שלנו, אנו משתמשים ב-17 סטי נתונים טבולאריים, שאנו כותבים בגודל, תכונות, איזון, תחום, וביצועים התחלתיים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כדי לבדוק את המסגרת שלנו, אנו משתמשים ב-17 סטי נתונים טבולאריים, שאנו כותבים בגודל, תכונות, איזון, תחום, וביצועים התחלתיים.",
+            "simul-whisper+gemma2-9b-it": "אז,  אתם יודעים, כדי להעריך את... הрамק שלנו, אנחנו משתמשים במאגר נתונים של 17 קטגוריות טבלאיות, אותו אנחנו רצים לפי גודל, תכונות, איזון, תחום,וביצועים ראשוניים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 69,
+          "src": "<audio controls=\"\" src=\"assets/robothon/398.wav\"></audio><br> SOURCE: And as knowledge base we use Wikipedia.<br>REFERENCE: וכבסיס ידע, אנו משתמשים בוויקיפדיה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "וכבסיס ידע, אנו משתמשים בוויקיפדיה.",
+            "simul-whisper+gemma2-9b-it": "- כן. - ובסיס הידע שלנו אנחנו משתמשיםבויקיפדיה."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 70,
+          "src": "<audio controls=\"\" src=\"assets/robothon/399.wav\"></audio><br> SOURCE: We design our experiment as leave one out ah evaluation where we train FeSTe over sixteen datasets and apply it to the seventeenth dataset.<br>REFERENCE: אנו מעצבים את הניסוי שלנו כהערכה חיה. כאשר אנו מאמנים את FAST על 16 סטי נתונים, ומיישמים אותו על ה-17.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אנו מעצבים את הניסוי שלנו כהערכה חיה. כאשר אנו מאמנים את FAST על 16 סטי נתונים, ומיישמים אותו על ה-17.",
+            "simul-whisper+gemma2-9b-it": "טוב, חווית עיצוב היא חוויה חיה אחת, ו, ו, להעריך. כשאנחנו מתאמנים, מהר, מעל, שש, עשר, קבוצות נתונים, ואנחנו מביאים אותה, לזה, שבע, קבוצת נתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 71,
+          "src": "<audio controls=\"\" src=\"assets/robothon/400.wav\"></audio><br> SOURCE: We also, we also split each dataset into four folds and apply four folds cross validation.<br>REFERENCE: אנו גם מחלקים כל סט נתונים לארבעה חלקים, ומבצעים ארבעה חלקים של חלוקה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אנו גם מחלקים כל סט נתונים לארבעה חלקים, ומבצעים ארבעה חלקים של חלוקה.",
+            "simul-whisper+gemma2-9b-it": "אז, אנחנו גם, כל, אנחנו גם מחלקים כל קבוצת נתונים, ל, ארבע, ארבע,ואנחנו מביאים אותה, ל,  לזרוק את ה cross-validation הכוזב."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 72,
+          "src": "<audio controls=\"\" src=\"assets/robothon/401.wav\"></audio><br> SOURCE: Then, we generate the new features and evaluate them using five evaluation classifiers.<br>REFERENCE: אז אנו יוצרים את התכונה החדשה, ומעריכים אותה באמצעות חמישה מסווגים.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אז אנו יוצרים את התכונה החדשה, ומעריכים אותה באמצעות חמישה מסווגים.",
+            "simul-whisper+gemma2-9b-it": "ואז, אה, אה  עם ג'נה ממש עכשיו אתה מופיע בערך, מדורג אותםבאמצעות חמישה מדרגות שיפוט."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 73,
+          "src": "<audio controls=\"\" src=\"assets/robothon/402.wav\"></audio><br> SOURCE: We use in our experiments base BERT base architecture.<br>REFERENCE: אנו משתמשים, בניסויים שלנו, בארכיטקטורה המבוססת על BERT.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אנו משתמשים, בניסויים שלנו, בארכיטקטורה המבוססת על BERT.",
+            "simul-whisper+gemma2-9b-it": "אנחנו משתמשים בניסוי חדש מבוסס רצועה."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 74,
+          "src": "<audio controls=\"\" src=\"assets/robothon/403.wav\"></audio><br> SOURCE: Here are the results for our experiments.<br>REFERENCE: כאן הם התוצאות של הניסויים שלנו.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאן הם התוצאות של הניסויים שלנו.",
+            "simul-whisper+gemma2-9b-it": "אלוהים, התוצאות של ניסוינו,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 75,
+          "src": "<audio controls=\"\" src=\"assets/robothon/404.wav\"></audio><br> SOURCE: You can see that we compare our our framework to target dataset finetuning, target task finetuning, and a MTDNN preliminary finetuning.<br>REFERENCE: אתם יכולים לראות שאנו משווים את המסגרת שלנו לעיבוד יעד, עיבוד משימה, ו- MTDNN,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אתם יכולים לראות שאנו משווים את המסגרת שלנו לעיבוד יעד, עיבוד משימה, ו- MTDNN,",
+            "simul-whisper+gemma2-9b-it": "אתם יכולים לראות אתזה,umm,  אנחנו משווים את התבנית שלנו לנתוני יעד, אה,נתונים, אה, אה. טעינה מדויקת של מטרה, טעינה מדויקת של מטרה. אוי, אום.  וא... MTDNN, הברקה ראשונית"
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 76,
+          "src": "<audio controls=\"\" src=\"assets/robothon/405.wav\"></audio><br> SOURCE: And our reformulated finetuning achieves the best result, the best performance.<br>REFERENCE: והגישה שלנו משיגה את התוצאות הטובות ביותר, הביצועים הטובים ביותר.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "והגישה שלנו משיגה את התוצאות הטובות ביותר, הביצועים הטובים ביותר.",
+            "simul-whisper+gemma2-9b-it": "ו... אה...  עם זאת, נוסחה, אה, מדויקת, מגיעה ל, הטובה ביותר, אה, תוצאה, הביצוע הטוב ביותר."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 77,
+          "src": "<audio controls=\"\" src=\"assets/robothon/406.wav\"></audio><br> SOURCE: While MTDNN achieved two percent improvement over the target dataset finetuning.<br>REFERENCE: כאשר mtDNN השיג שיפור של 2% על עיבוד היעד,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאשר mtDNN השיג שיפור של 2% על עיבוד היעד,",
+            "simul-whisper+gemma2-9b-it": "בעוד MTDNN,זה, אום,  השיגה 2% שיפור על פני המערכת המקורית, הנתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 78,
+          "src": "<audio controls=\"\" src=\"assets/robothon/407.wav\"></audio><br> SOURCE: Our approach achieved six percent improvement.<br>REFERENCE: הגישה שלנו השיגה שיפור של 6%.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הגישה שלנו השיגה שיפור של 6%.",
+            "simul-whisper+gemma2-9b-it": "התוכנית שלנו השיגה 6% שיפור"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 79,
+          "src": "<audio controls=\"\" src=\"assets/robothon/408.wav\"></audio><br> SOURCE: When we look on the small ah dataset, we can see that the performance of MTDNN decreases and the improvement of the prelim, the preliminary multitask finetuning phase decreases to one point five percent.<br>REFERENCE: כאשר אנו מסתכלים על סטי נתונים קטנים, אנו יכולים לראות שהביצועים של mtDNN יורדים, והשיפור של שלב העיבוד הרב-משימתי המוקדם יורד,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "כאשר אנו מסתכלים על סטי נתונים קטנים, אנו יכולים לראות שהביצועים של mtDNN יורדים, והשיפור של שלב העיבוד הרב-משימתי המוקדם יורד,",
+            "simul-whisper+gemma2-9b-it": "כאשר אנואנו מסתכלים, אה, אה...  על סט נתונים קטן זה, אנחנו יכולים לראות שהביצוע של DNA ריק יורד והם שיפור של שלב ה fine tuning הרב-задаכתי הקדמי שלהם יורד לנקודה וחצי. A. פרספקטיבה. אחוז."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 80,
+          "src": "<audio controls=\"\" src=\"assets/robothon/409.wav\"></audio><br> SOURCE: But our performance increased to eleven percent compared to the target task finetuning alone.<br>REFERENCE: אבל הביצועים שלנו עולים ל-11% לעומת עיבוד המשימה בלבד.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל הביצועים שלנו עולים ל-11% לעומת עיבוד המשימה בלבד.",
+            "simul-whisper+gemma2-9b-it": "אבל הביצועים שלנו עלו ל-11%. אחוז. A. בהשוואה למשימה היעד.Fine tuning בלבד."
+          }
+        }
+      ],
+      [
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 81,
+          "src": "<audio controls=\"\" src=\"assets/robothon/410.wav\"></audio><br> SOURCE: For summing, FeSTE enables few shot enrichment from thirty five samples in our experiments.<br>REFERENCE: לסיכום, FAST מאפשר עשרות נתונים מעטים,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "לסיכום, FAST מאפשר עשרות נתונים מעטים,",
+            "simul-whisper+gemma2-9b-it": "לשם דיו, מהר מאפשר שיגור פיזור אנרגיה, ומה-35 דגימות בניסויים שלנו,"
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 82,
+          "src": "<audio controls=\"\" src=\"assets/robothon/411.wav\"></audio><br> SOURCE: It uses one architecture for all tasks and datasets.<br>REFERENCE: הוא משתמש בארכיטקטורה אחת עבור כל המשימות,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הוא משתמש בארכיטקטורה אחת עבור כל המשימות,",
+            "simul-whisper+gemma2-9b-it": "הוא משתמש בארכיטקטורה אחת לכל המשימות,קבוצות נתונים."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 83,
+          "src": "<audio controls=\"\" src=\"assets/robothon/412.wav\"></audio><br> SOURCE: And it keeps the head of ah of the model.<br>REFERENCE: והוא שומר את הראש של המודל.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "והוא שומר את הראש של המודל.",
+            "simul-whisper+gemma2-9b-it": "והוא שומר את ראשו של...את ראש המודל."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 84,
+          "src": "<audio controls=\"\" src=\"assets/robothon/413.wav\"></audio><br> SOURCE: But it adds reformulation phase.<br>REFERENCE: אבל הוא מוסיף שלב חידוש,",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "אבל הוא מוסיף שלב חידוש,",
+            "simul-whisper+gemma2-9b-it": "אבל זה מוסיף שלב של עיבוד מחדש."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 85,
+          "src": "<audio controls=\"\" src=\"assets/robothon/414.wav\"></audio><br> SOURCE: It augments the train set and it needs a target value with semantic meaning so we can feed it into the language model and use it in the sentence pair classification problem.<br>REFERENCE: הוא מרחיב את סט האימון, והוא זקוק לערך יעד עם משמעות סמנטית, כדי שנוכל להזין אותו למודל השפה, ולהשתמש בו בבעיה של סיווג משפט.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "הוא מרחיב את סט האימון, והוא זקוק לערך יעד עם משמעות סמנטית, כדי שנוכל להזין אותו למודל השפה, ולהשתמש בו בבעיה של סיווג משפט.",
+            "simul-whisper+gemma2-9b-it": "זה משלים את קבוצת הרכבות וזה זקוק לערך יעד עם משמעות סמנטית. כך נוכל להזין אותו לмодель שפה ולהשתמש בו ב- sentence perper classification problem."
+          }
+        },
+        {
+          "langs": "en-he",
+          "dataset": "harari-katz-2022-shot-esa-article",
+          "sample_id": 86,
+          "src": "<audio controls=\"\" src=\"assets/robothon/415.wav\"></audio><br> SOURCE: Thank you.<br>REFERENCE: תודה.",
+          "tgt": {
+            "offline-whisperx+llama3-70b": "תודה.",
+            "simul-whisper+gemma2-9b-it": "טוב.  תודה. תודה.תודה."
+          }
+        }
+      ]
+    ]
+  ]
+}
