@@ -1,0 +1,86 @@
+{"dataset_id": "acl_6060", "sample_id": 330, "src_lang": "en", "tgt_lang": "cs", "output": "Dob"}
+{"dataset_id": "acl_6060", "sample_id": 331, "src_lang": "en", "tgt_lang": "cs", "output": "rý den. Jmenuji se Asaf Harari"}
+{"dataset_id": "acl_6060", "sample_id": 332, "src_lang": "en", "tgt_lang": "cs", "output": "a budu prezentovat náš článek s názvem „Few Shot Tabular Data Enrichment Using Finetuning Transformers Architectures“. To je vědec, který"}
+{"dataset_id": "acl_6060", "sample_id": 333, "src_lang": "en", "tgt_lang": "cs", "output": "analyzuje data a zaměřuje se především na manipulaci s existujícími rysy dat."}
+{"dataset_id": "acl_6060", "sample_id": 334, "src_lang": "en", "tgt_lang": "cs", "output": "Ale někdy tyto rysy jsou omezené."}
+{"dataset_id": "acl_6060", "sample_id": 335, "src_lang": "en", "tgt_lang": "cs", "output": "Generování rysů pomocí jiného zdroje dat může přidat podstatné informace."}
+{"dataset_id": "acl_6060", "sample_id": 336, "src_lang": "en", "tgt_lang": "cs", "output": "Cílem našeho výzkumu je automatizace obohacování tabulkových dat pomocí externích zdrojů volného textu."}
+{"dataset_id": "acl_6060", "sample_id": 337, "src_lang": "en", "tgt_lang": "cs", "output": "Předpokládejme, že máme tabulkový datový soubor a znalostní bázi."}
+{"dataset_id": "acl_6060", "sample_id": 338, "src_lang": "en", "tgt_lang": "cs", "output": "Potřebujeme automatickýautomatický proces, který zahrnuje, vy... Do propojení a analýzy textu, abychom extrahovali nové funkce pro znalostníznalostní bázi volného"}
+{"dataset_id": "acl_6060", "sample_id": 339, "src_lang": "en", "tgt_lang": "cs", "output": "textu. Naši přátelé. Začneme přesně tímto automatickýmprocesem."}
+{"dataset_id": "acl_6060", "sample_id": 340, "src_lang": "en", "tgt_lang": "cs", "output": "Takže ukončeme příklad. V tom jsem řekl, že se to zapojilo do FAST."}
+{"dataset_id": "acl_6060", "sample_id": 341, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu je datová sada univerzitní datová sada, kdy"}
+{"dataset_id": "acl_6060", "sample_id": 342, "src_lang": "en", "tgt_lang": "cs", "output": "cílem je klasifikovat univerzity do nízkých a vysokých univerzit."}
+{"dataset_id": "acl_6060", "sample_id": 343, "src_lang": "en", "tgt_lang": "cs", "output": "Jako znalostníbázi používáme Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 344, "src_lang": "en", "tgt_lang": "cs", "output": "První fáze systému FAST je propojení entit."}
+{"dataset_id": "acl_6060", "sample_id": 345, "src_lang": "en", "tgt_lang": "cs", "output": "Když každá entita, v tomto příkladu název univerzity, je propojena sentitou v rámci znalostní báze."}
+{"dataset_id": "acl_6060", "sample_id": 346, "src_lang": "en", "tgt_lang": "cs", "output": "A text entit znalostní báze je extrahován a přidán do datové sady."}
+{"dataset_id": "acl_6060", "sample_id": 347, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu je textem abstrakt stránky naWikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 348, "src_lang": "en", "tgt_lang": "cs", "output": "Nyní potřebujeme vygenerovat nebo extrahovat rysy zútoku na získání informací."}
+{"dataset_id": "acl_6060", "sample_id": 349, "src_lang": "en", "tgt_lang": "cs", "output": "Takže potřebujeme vefázi extrakce vlastností, A můžeme zahrnout analýzu textu."}
+{"dataset_id": "acl_6060", "sample_id": 350, "src_lang": "en", "tgt_lang": "cs", "output": "A to je hlavní schopnost tohoto dokumentu. A já se do ní budu podrobně zabývat v následujícíchsnímcích."}
+{"dataset_id": "acl_6060", "sample_id": 351, "src_lang": "en", "tgt_lang": "cs", "output": "Po fázi extrakcevlastností, Existuje fáze generování vlastností, když používáme extrahovanou vlastnost k vytvoření maléhopočtu nových vlastností."}
+{"dataset_id": "acl_6060", "sample_id": 352, "src_lang": "en", "tgt_lang": "cs", "output": "A Rychle. Generovat.A. Jo. Funkce v počtu tříd původního datového souboru."}
+{"dataset_id": "acl_6060", "sample_id": 353, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu původní datový soubor má dvě třídy."}
+{"dataset_id": "acl_6060", "sample_id": 354, "src_lang": "en", "tgt_lang": "cs", "output": "Takže nejprve generujte dvě třídy. Takže nejprve generujte dvě nové funkce."}
+{"dataset_id": "acl_6060", "sample_id": 355, "src_lang": "en", "tgt_lang": "cs", "output": "Ale pokud má datový soubor pět tříd, nejprve generujte pět novýchnových funkcí."}
+{"dataset_id": "acl_6060", "sample_id": 356, "src_lang": "en", "tgt_lang": "cs", "output": "Každá funkce, Představtepravděpodobnost pro každou třídu."}
+{"dataset_id": "acl_6060", "sample_id": 357, "src_lang": "en", "tgt_lang": "cs", "output": "K analýze textu používáme aktuální stav techniky v oblasti textové analýzy, což jsou transformační jazykové modely jako BERT, GPT, XNL. A tak dále. To"}
+{"dataset_id": "acl_6060", "sample_id": 358, "src_lang": "en", "tgt_lang": "cs", "output": "je, ale není pravděpodobné, že bychom mohli trénovat jazykové modely pomocí vstupních datovýchsad."}
+{"dataset_id": "acl_6060", "sample_id": 359, "src_lang": "en", "tgt_lang": "cs", "output": "TakžeDobře. Takže když se k tomu i jen přiblížím, budecílová úloha jemné úpravy."}
+{"dataset_id": "acl_6060", "sample_id": 360, "src_lang": "en", "tgt_lang": "cs", "output": "Hmm,takže, hmm, Ve fázi extrakce funkcí můžeme stáhnout jazykový model peritrain. Jemně doladit jazykový model na cílovém datovém souboru."}
+{"dataset_id": "acl_6060", "sample_id": 361, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu, abychom jemně doladili jazykový model, je to klasifikace, klasifikace textu a třídy. Abstrakce do tříd, nízké nebo vysoké.A"}
+{"dataset_id": "acl_6060", "sample_id": 362, "src_lang": "en", "tgt_lang": "cs", "output": "pak Přijměte jazykový model výstupu,výstupu, který je pravděpodobností pro každou třídu, a použijte jej jako nové funkce. -"}
+{"dataset_id": "acl_6060", "sample_id": 363, "src_lang": "en", "tgt_lang": "cs", "output": "Problém s tímto přístupem je, že datový soubor může obsahovat málo odlišnýchtextových entit. - Problém s tímto přístupem je, že datový soubor může obsahovat málo odlišných textových entit."}
+{"dataset_id": "acl_6060", "sample_id": 364, "src_lang": "en", "tgt_lang": "cs", "output": "V našem experimentu obsahovala téměř polovina datových sad méně než 400 vzorků a nejmenší datová sada obsahovala... 34 vzorků, ve svém... ve svém tréninkovém souboru."}
+{"dataset_id": "acl_6060", "sample_id": 365, "src_lang": "en", "tgt_lang": "cs", "output": "Takže, abychom vyladili jazykový model na... tento datový soubor, budeefektivní."}
+{"dataset_id": "acl_6060", "sample_id": 366, "src_lang": "en", "tgt_lang": "cs", "output": "Můžeme však využít předchozí znalosti o předem analyzovaných datových sadách,"}
+{"dataset_id": "acl_6060", "sample_id": 367, "src_lang": "en", "tgt_lang": "cs", "output": "protože FAST je... aplikujeme na více datových sad. Můžeme použít n minus jedna datovésady. A Společně informace o datovém souboru in minus one a použijte tyto informace při analýze datového souborudatového souboru instance. Děkujeme."}
+{"dataset_id": "acl_6060", "sample_id": 368, "src_lang": "en", "tgt_lang": "cs", "output": "Co navrhujeme, je přidat... přidat další fázi jemného ladění,"}
+{"dataset_id": "acl_6060", "sample_id": 369, "src_lang": "en", "tgt_lang": "cs", "output": "předběžnou fázi jemného ladění pro více úkolů."}
+{"dataset_id": "acl_6060", "sample_id": 370, "src_lang": "en", "tgt_lang": "cs", "output": "Když jemně ladíte jazykový model na n-1 datových sadách"}
+{"dataset_id": "acl_6060", "sample_id": 371, "src_lang": "en", "tgt_lang": "cs", "output": "a... a... a pak... znovu, proveďte další fázi jemného ladění, což je jemné ladění cílového úkolu, když zjistíte... když jemně ladíme jazykový model na n-té cílovécílové datové sadě."}
+{"dataset_id": "acl_6060", "sample_id": 372, "src_lang": "en", "tgt_lang": "cs", "output": "Takže, Současný stav v oblasti víceúlohového modelování, víceúlohové optimalizace nazývanéMT-DNN."}
+{"dataset_id": "acl_6060", "sample_id": 373, "src_lang": "en", "tgt_lang": "cs", "output": "V MT-DNN, to MTDNN udržuje... hlavy v počtu... úkolů. Ve výcvikovém souboru."}
+{"dataset_id": "acl_6060", "sample_id": 374, "src_lang": "en", "tgt_lang": "cs", "output": "Takže, pokud... v tomto příkladu jsou... čtyři...úkoly ve výcvikovém souboru, takže... MTDNN... Amen. Zachovejte čtyři hlavy. Jak vidíte, obraz."}
+{"dataset_id": "acl_6060", "sample_id": 375, "src_lang": "en", "tgt_lang": "cs", "output": "A. To jsou vzorky. Spusťte tašku. Z. A. Ze školicí sady."}
+{"dataset_id": "acl_6060", "sample_id": 376, "src_lang": "en", "tgt_lang": "cs", "output": "A pokud náhodná dávka patří například k Singerovu a Seltzerovu úkolu klasifikace. Je to provedení dopředného a zpětného páru. První hlavou."}
+{"dataset_id": "acl_6060", "sample_id": 377, "src_lang": "en", "tgt_lang": "cs", "output": "A pokud náhodná dávka patří k úkolu párového hodnocení. Je to postoj dopředného a zpětného páru. Prostřednictvím posledníhlavy. Dobře."}
+{"dataset_id": "acl_6060", "sample_id": 378, "src_lang": "en", "tgt_lang": "cs", "output": "A já vám teď řeknu, víte, tabulkové datové sady, právě je zdíme na počtu tříd.A."}
+{"dataset_id": "acl_6060", "sample_id": 379, "src_lang": "en", "tgt_lang": "cs", "output": "A Existuje mnohoúkolů."}
+{"dataset_id": "acl_6060", "sample_id": 380, "src_lang": "en", "tgt_lang": "cs", "output": "A dnes budu hovořit o tom, jak udržovat počet hlav tříd, výstupních vrstev"}
+{"dataset_id": "acl_6060", "sample_id": 381, "src_lang": "en", "tgt_lang": "cs", "output": "a o přidání a navíc prázdné DNA, které je potřeba iniciovat jako nové hlavy pro nový datovýnový datový soubor s novým úkolem. Takže, -"}
+{"dataset_id": "acl_6060", "sample_id": 382, "src_lang": "en", "tgt_lang": "cs", "output": "Náš přístup se nazývá Task Reformulation Fine-tuning, eh,- eh, Jsme v našem přístupu k reformě fungování úkolů místo udržování více vedoucích, reformulujeme každý datový soubor do věty na problém klasifikace, což jsoudva třídy, úkoly Takže"}
+{"dataset_id": "acl_6060", "sample_id": 383, "src_lang": "en", "tgt_lang": "cs", "output": "se podíváme na příklad..."}
+{"dataset_id": "acl_6060", "sample_id": 384, "src_lang": "en", "tgt_lang": "cs", "output": "tady je náš vstupní datový soubor, který se skládá z poplatku v textových znacích a třídách,"}
+{"dataset_id": "acl_6060", "sample_id": 385, "src_lang": "en", "tgt_lang": "cs", "output": "a my znovu formulujeme úkol z klasifikace textu do nižší výšky, abychom mohli text klasifikovat do abstraktu a třídy jako pravda nebo nepravda, nebo jinými slovy, trénujeme jazykový model k klasifikaci abstraktu atřídy."}
+{"dataset_id": "acl_6060", "sample_id": 386, "src_lang": "en", "tgt_lang": "cs", "output": "Chcete si vybratabstrakt a zařadit se do... A pokud abstrakt patřípatří do třídy nebo ne. Takže, uh, vektor štítku je v tomto případě stabilní, uh, vždy"}
+{"dataset_id": "acl_6060", "sample_id": 387, "src_lang": "en", "tgt_lang": "cs", "output": ",uh, uh Eh, která se vždy skládáze dvou tříd."}
+{"dataset_id": "acl_6060", "sample_id": 388, "src_lang": "en", "tgt_lang": "cs", "output": "A toto je, uh, algoritmus pro naši, uh, v pořádku. Jediná formule, která najde ladící přístup."}
+{"dataset_id": "acl_6060", "sample_id": 389, "src_lang": "en", "tgt_lang": "cs", "output": "Takže se podívejme na celý rámec."}
+{"dataset_id": "acl_6060", "sample_id": 390, "src_lang": "en", "tgt_lang": "cs", "output": "Uh, že sada jenapájena rychlým, uh, uh"}
+{"dataset_id": "acl_6060", "sample_id": 391, "src_lang": "en", "tgt_lang": "cs", "output": "A pak, uh... rychle přejdeme do fáze propojení."}
+{"dataset_id": "acl_6060", "sample_id": 392, "src_lang": "en", "tgt_lang": "cs", "output": "To... uh... extrahuje text ze znalostní báze, která v tomto příkladu je abstrakt stránky na Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 393, "src_lang": "en", "tgt_lang": "cs", "output": "Pak... uh... přeformuluje úkol doúkolu klasifikace věta po větě."}
+{"dataset_id": "acl_6060", "sample_id": 394, "src_lang": "en", "tgt_lang": "cs", "output": "A... *ahem* Přepnul jsem jazykový režim na nový úkol a pravděpodobnost výstupu pro každou třídu."}
+{"dataset_id": "acl_6060", "sample_id": 395, "src_lang": "en", "tgt_lang": "cs", "output": "*ahem* Poznamenejte si, že jazykový model je,uh, *ah Dobře. Děkuji. Děkuji. Děkuji. Děkuji. Děkuji. Děkuji.Děkuji. Já vám ukážu, jak na to."}
+{"dataset_id": "acl_6060", "sample_id": 396, "src_lang": "en", "tgt_lang": "cs", "output": "Poté použijeme, ehm, ehm, výstupní vektor jazykového modelu. Jako, ehm, nově vytvořenou vlastnost v počtutříd. Takže, Víte,"}
+{"dataset_id": "acl_6060", "sample_id": 397, "src_lang": "en", "tgt_lang": "cs", "output": "k vyhodnocení... našeho rámce používáme 17 tabulkových klasifikačních datových sad, které testujeme podle velikosti, vlastností, vyváženosti,vyváženosti, domény a počátečního výkonu."}
+{"dataset_id": "acl_6060", "sample_id": 398, "src_lang": "en", "tgt_lang": "cs", "output": "-Jo. - Jako znalostní bázi používáme Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 399, "src_lang": "en", "tgt_lang": "cs", "output": "No, zkušenost s designerware je živá, a, a, vyhodnocuje se. Když trénujeme, rychle, přes, šest, deset, datové sady, a aplikujeme to na tento, sedm, zubní, datový soubor. Takže"}
+{"dataset_id": "acl_6060", "sample_id": 400, "src_lang": "en", "tgt_lang": "cs", "output": "také, každý, také rozdělujeme každý datový soubor na, čtyři, čtyři,a aplikujeme,Nesmyslná křížová validace. Poté, ehm, ehm S Jennou hned"}
+{"dataset_id": "acl_6060", "sample_id": 401, "src_lang": "en", "tgt_lang": "cs", "output": "potézavedete hodnotící systém, kde je ohodnotíte pomocí pěti hodnotících kritérií."}
+{"dataset_id": "acl_6060", "sample_id": 402, "src_lang": "en", "tgt_lang": "cs", "output": "Používáme nový experiment založený na pásovéarchitektuře."}
+{"dataset_id": "acl_6060", "sample_id": 403, "src_lang": "en", "tgt_lang": "cs", "output": "Bože, výsledky našeho experimentu,"}
+{"dataset_id": "acl_6060", "sample_id": 404, "src_lang": "en", "tgt_lang": "cs", "output": "vidíteto, ehm, Porovnáváme náš rámec s cílovým, uh, datovým souborem,uh, uh Jemné ladění cílového úkolu.Hmm, éé. a... Předběžné jemné ladění MTDNNa..."}
+{"dataset_id": "acl_6060", "sample_id": 405, "src_lang": "en", "tgt_lang": "cs", "output": "um... Jak je formulováno, uh, jemné ladění k dosažení nejlepšího, uh,výsledku, nejlepšího výkonu.Zatímco"}
+{"dataset_id": "acl_6060", "sample_id": 406, "src_lang": "en", "tgt_lang": "cs", "output": "MTDNN, to, er, Dosáhli jsme 2% zlepšení oproti cílové sadě dat."}
+{"dataset_id": "acl_6060", "sample_id": 407, "src_lang": "en", "tgt_lang": "cs", "output": "Naše přístup dosáhl 6% zlepšení,"}
+{"dataset_id": "acl_6060", "sample_id": 408, "src_lang": "en", "tgt_lang": "cs", "output": "když sepodíváme na... uh... uh... Na tomto malém datovém souboru vidíme, že výkon prázdné DNA klesá a oni dokazují svou trvalou předběžnou fázi jemného ladění, která klesá na jeden a půl. A. perspektiva. Procenta."}
+{"dataset_id": "acl_6060", "sample_id": 409, "src_lang": "en", "tgt_lang": "cs", "output": "Ale náš výkon se zvýšil na 11 %. A. ve srovnání s cílovýmúkolem. Jemné ladění podél."}
+{"dataset_id": "acl_6060", "sample_id": 410, "src_lang": "en", "tgt_lang": "cs", "output": "Potřebujeme rychlé inkoustové zařízení, které umožňuje obohacení o fúzi a z 35 vzorků v našich experimentech vyu"}
+{"dataset_id": "acl_6060", "sample_id": 411, "src_lang": "en", "tgt_lang": "cs", "output": "žívá jednu architekturu pro všechnyvyužívá jednu architekturu pro všechny úkoly a datové sady."}
+{"dataset_id": "acl_6060", "sample_id": 412, "src_lang": "en", "tgt_lang": "cs", "output": "A on si stále drží hlavuhlavu modelu."}
+{"dataset_id": "acl_6060", "sample_id": 413, "src_lang": "en", "tgt_lang": "cs", "output": "Ale přidává se fáze reformulace."}
+{"dataset_id": "acl_6060", "sample_id": 414, "src_lang": "en", "tgt_lang": "cs", "output": "Zvyšuje se tréninková sada a potřebuje cílovou hodnotu se sémantickým významem. Takže ji můžeme vložit do jazykového modelu a použít ji v problému klasifikace na úrovnivět. Dobře. Děkujeme.Děkujeme"}
+{"dataset_id": "acl_6060", "sample_id": 415, "src_lang": "en", "tgt_lang": "cs", "output": "Dob"}

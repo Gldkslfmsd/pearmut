@@ -1,5 +1,5 @@
 ACL6060, one randomly selected document nr. 111
-- en-de STEL annotation
+- en-he STEL annotation
 
 1) Dominik selected 2 ST systems and processed them. The candidate translations are in inputs/ dir.
 

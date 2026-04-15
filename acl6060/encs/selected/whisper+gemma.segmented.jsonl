@@ -1,0 +1,86 @@
+{"dataset_id": "acl_6060", "sample_id": 330, "src_lang": "en", "tgt_lang": "cs", "output": "Ahoj,"}
+{"dataset_id": "acl_6060", "sample_id": 331, "src_lang": "en", "tgt_lang": "cs", "output": "jmenuji se Asaf Harari"}
+{"dataset_id": "acl_6060", "sample_id": 332, "src_lang": "en", "tgt_lang": "cs", "output": "a představím vám naši práci s názvem \"Obohacování tabulkových dat s využitím techniky few-shot a jemným doladěním transformerových architektur\"."}
+{"dataset_id": "acl_6060", "sample_id": 333, "src_lang": "en", "tgt_lang": "cs", "output": "Data scientisti analyzují data a zaměřují se především na manipulaci s existujícími funkcemi dat."}
+{"dataset_id": "acl_6060", "sample_id": 334, "src_lang": "en", "tgt_lang": "cs", "output": "Někdy jsou však tyto funkce omezené."}
+{"dataset_id": "acl_6060", "sample_id": 335, "src_lang": "en", "tgt_lang": "cs", "output": "Generování funkcí s využitím dalšího zdroje dat může přidat podstatné informace."}
+{"dataset_id": "acl_6060", "sample_id": 336, "src_lang": "en", "tgt_lang": "cs", "output": "Naším výzkumným cílem je automatické obohacování tabulkových dat s využitím volného textu z externích zdrojů."}
+{"dataset_id": "acl_6060", "sample_id": 337, "src_lang": "en", "tgt_lang": "cs", "output": "Předpokládejme, že máme tabulkovou datovou sadu a znalostní bázi."}
+{"dataset_id": "acl_6060", "sample_id": 338, "src_lang": "en", "tgt_lang": "cs", "output": "Potřebujeme automatický proces, který zahrnuje entity linking a textovou analýzu, abychom extrahovali nové funkce ze volného textu znalostní báze."}
+{"dataset_id": "acl_6060", "sample_id": 339, "src_lang": "en", "tgt_lang": "cs", "output": "Náš framework FAST začíná právě tímto automatickým procesem."}
+{"dataset_id": "acl_6060", "sample_id": 340, "src_lang": "en", "tgt_lang": "cs", "output": "Pojďme se tedy podívat na příklad. Datovou sadu vložíme do FAST."}
+{"dataset_id": "acl_6060", "sample_id": 341, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu je datovou sadou datová sada univer"}
+{"dataset_id": "acl_6060", "sample_id": 342, "src_lang": "en", "tgt_lang": "cs", "output": "zit, jejímž cílem je klasifikovat univerzity do univerzit s nízkým hodnocením a univerzit s vysokým hodnocením."}
+{"dataset_id": "acl_6060", "sample_id": 343, "src_lang": "en", "tgt_lang": "cs", "output": "Jako znalostní bázi používáme Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 344, "src_lang": "en", "tgt_lang": "cs", "output": "První fází FAST je entity linking."}
+{"dataset_id": "acl_6060", "sample_id": 345, "src_lang": "en", "tgt_lang": "cs", "output": "Když je každá entita, v tomto příkladu název univerzity, spojena s entitou ve znalostní"}
+{"dataset_id": "acl_6060", "sample_id": 346, "src_lang": "en", "tgt_lang": "cs", "output": "bázi, extrahuje se text entit znalostní báze a přidá se do datové sady."}
+{"dataset_id": "acl_6060", "sample_id": 347, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu je textem abstrakt stránky na Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 348, "src_lang": "en", "tgt_lang": "cs", "output": "Nyní potřebujeme generovat nebo extrahovat funkce z načteného textu."}
+{"dataset_id": "acl_6060", "sample_id": 349, "src_lang": "en", "tgt_lang": "cs", "output": "Potřebujeme tedy fázi extrakce funkcí, která zahrnuje textovou analýzu."}
+{"dataset_id": "acl_6060", "sample_id": 350, "src_lang": "en", "tgt_lang": "cs", "output": "A právě toto je hlavní novinka v této práci, do které se podrobněji podívám v následujících snímcích."}
+{"dataset_id": "acl_6060", "sample_id": 351, "src_lang": "en", "tgt_lang": "cs", "output": "Po fázi extrakce funkcí následuje fáze generování funkcí, kde využíváme extrahované funkce k vygenerování malého počtu nových funkcí."}
+{"dataset_id": "acl_6060", "sample_id": 352, "src_lang": "en", "tgt_lang": "cs", "output": "Nejdříve vygenerujeme... funkce v počtu tříd původní datové sady."}
+{"dataset_id": "acl_6060", "sample_id": 353, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu má původní datová sada dvě třídy,"}
+{"dataset_id": "acl_6060", "sample_id": 354, "src_lang": "en", "tgt_lang": "cs", "output": "takže FAST vygeneruje dvě nové funkce."}
+{"dataset_id": "acl_6060", "sample_id": 355, "src_lang": "en", "tgt_lang": "cs", "output": "Pokud má datová sada pět tříd, FAST vygeneruje pět nových funkcí."}
+{"dataset_id": "acl_6060", "sample_id": 356, "src_lang": "en", "tgt_lang": "cs", "output": "Každá funkce představuje pravděpodobnost pro každou třídu."}
+{"dataset_id": "acl_6060", "sample_id": 357, "src_lang": "en", "tgt_lang": "cs", "output": "K analýze textu používáme současný stav techniky v textové analýze, což jsou jazykové modely založené na transformátorech, jako jsou BERT, GPT, XML a další."}
+{"dataset_id": "acl_6060", "sample_id": 358, "src_lang": "en", "tgt_lang": "cs", "output": "Není však pravděpodobné, že bychom mohli trénovat jazykový model pomocí vstupních datových sad."}
+{"dataset_id": "acl_6060", "sample_id": 359, "src_lang": "en", "tgt_lang": "cs", "output": "Naivní přístup by tedy bylo jemné doladění pro cílovou úlohu."}
+{"dataset_id": "acl_6060", "sample_id": 360, "src_lang": "en", "tgt_lang": "cs", "output": "Ve fázi extrakce funkcí můžeme stáhnout předtrénovaný jazykový model, jemně ho doladit na cílové datové sadě."}
+{"dataset_id": "acl_6060", "sample_id": 361, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu, abychom jemně doladili jazykový model, abychom klasifikovali text do tříd, abstrakt do tříd, nízké nebo vysoké,"}
+{"dataset_id": "acl_6060", "sample_id": 362, "src_lang": "en", "tgt_lang": "cs", "output": "obdržíme výstup jazykového modelu, což je pravděpodobnost pro každou třídu, a použijeme ho jako nové funkce."}
+{"dataset_id": "acl_6060", "sample_id": 363, "src_lang": "en", "tgt_lang": "cs", "output": "Problém s tímto přístupem je, že datové sady mohou mít málo odlišných entitních textů."}
+{"dataset_id": "acl_6060", "sample_id": 364, "src_lang": "en", "tgt_lang": "cs", "output": "V našem experimentu téměř polovina datových sad obsahuje méně než 400 vzorků a nejmenší datová sada obsahuje 35 vzorků ve svém tréninkovém setu."}
+{"dataset_id": "acl_6060", "sample_id": 365, "src_lang": "en", "tgt_lang": "cs", "output": "Doladění jazykového modelu na takovéto datové sadě by bylo neefektivní."}
+{"dataset_id": "acl_6060", "sample_id": 366, "src_lang": "en", "tgt_lang": "cs", "output": "Můžeme však využít předchozí znalosti o předanalyzovaných datových sadách,"}
+{"dataset_id": "acl_6060", "sample_id": 367, "src_lang": "en", "tgt_lang": "cs", "output": "protože FAST funguje na více datových sadách. Můžeme využít N minus jedna datové sady k získání informací o N minus jedna datových sadách a tato informace využít při analýze Nté datové sady."}
+{"dataset_id": "acl_6060", "sample_id": 368, "src_lang": "en", "tgt_lang": "cs", "output": "Navrhujeme přidat další fázi jemného doladění, fázi"}
+{"dataset_id": "acl_6060", "sample_id": 369, "src_lang": "en", "tgt_lang": "cs", "output": "předběžného multitaskového jemného doladění, kdy jemně do"}
+{"dataset_id": "acl_6060", "sample_id": 370, "src_lang": "en", "tgt_lang": "cs", "output": "ladíme jazykový model na N-1 datových sadách,"}
+{"dataset_id": "acl_6060", "sample_id": 371, "src_lang": "en", "tgt_lang": "cs", "output": "a poté provedeme další fázi jemného doladění, která je jemné doladění pro cílovou úlohu, kdy jemně doladíme jazykový model na Nté cílové datové sadě."}
+{"dataset_id": "acl_6060", "sample_id": 372, "src_lang": "en", "tgt_lang": "cs", "output": "Stav techniky v multitaskovém jemném doladění se jmenuje mtDNN."}
+{"dataset_id": "acl_6060", "sample_id": 373, "src_lang": "en", "tgt_lang": "cs", "output": "V mtDNN mtDNN udržuje hlavy v počtu úloh v tréninkové sadě."}
+{"dataset_id": "acl_6060", "sample_id": 374, "src_lang": "en", "tgt_lang": "cs", "output": "V tomto příkladu jsou v tréninkové sadě čtyři úlohy, takže mtDNN udržuje čtyři hlavy, jak můžete vidět na obrázku,"}
+{"dataset_id": "acl_6060", "sample_id": 375, "src_lang": "en", "tgt_lang": "cs", "output": "a vzorkuje náhodnou dávku z tréninkové sady. Pokud"}
+{"dataset_id": "acl_6060", "sample_id": 376, "src_lang": "en", "tgt_lang": "cs", "output": "náhodná dávka patří, například, úloze jednorázové klasifikace vět, provede se dopředný a zpětný průchod první hlavou."}
+{"dataset_id": "acl_6060", "sample_id": 377, "src_lang": "en", "tgt_lang": "cs", "output": "Pokud náhodná dávka patří úloze párového hodnocení, provede se dopředný a zpětný průchod poslední hlavou."}
+{"dataset_id": "acl_6060", "sample_id": 378, "src_lang": "en", "tgt_lang": "cs", "output": "V našem scénáři je Tableau datová sada ověřující počet tříd."}
+{"dataset_id": "acl_6060", "sample_id": 379, "src_lang": "en", "tgt_lang": "cs", "output": "Jsou tedy mnoho úloh."}
+{"dataset_id": "acl_6060", "sample_id": 380, "src_lang": "en", "tgt_lang": "cs", "output": "MTDNN udržuje počet tříd, hlavy, výstupní vrstvy."}
+{"dataset_id": "acl_6060", "sample_id": 381, "src_lang": "en", "tgt_lang": "cs", "output": "A navíc MTDNN musí inicializovat nové hlavy pro novou datovou sadu s novou úlohou."}
+{"dataset_id": "acl_6060", "sample_id": 382, "src_lang": "en", "tgt_lang": "cs", "output": "Náš přístup se jmenuje task reformulation fine-tuning. V našem přístupu, reformulace fungování, místo udržování více hlav, reformulujeme každou datovou sadu do problému klasifikace na jednu větu, což jsou úlohy se dvěma třídami."}
+{"dataset_id": "acl_6060", "sample_id": 383, "src_lang": "en", "tgt_lang": "cs", "output": "Pojďme se tedy podívat na příklad."}
+{"dataset_id": "acl_6060", "sample_id": 384, "src_lang": "en", "tgt_lang": "cs", "output": "Zde je naše vstupní datová sada, která se skládá z entit, funkcí, textu a tříd"}
+{"dataset_id": "acl_6060", "sample_id": 385, "src_lang": "en", "tgt_lang": "cs", "output": "a reformulujeme úlohu z klasifikace textu do nízké a vysoké do klasifikace textu, abstraktu a třídy do pravda nebo nepravda,"}
+{"dataset_id": "acl_6060", "sample_id": 386, "src_lang": "en", "tgt_lang": "cs", "output": "nebo jinými slovy trénujeme jazykový model, aby klasifikoval abstrakt a třídu, pokud abstrakt patří do třídy, nebo ne. Label vektor"}
+{"dataset_id": "acl_6060", "sample_id": 387, "src_lang": "en", "tgt_lang": "cs", "output": "v tomto případě zůstává vždy, který se skládá vždy ze dvou tříd."}
+{"dataset_id": "acl_6060", "sample_id": 388, "src_lang": "en", "tgt_lang": "cs", "output": "A toto je algoritmus pro náš reformulovaný přístup k jemnému doladění."}
+{"dataset_id": "acl_6060", "sample_id": 389, "src_lang": "en", "tgt_lang": "cs", "output": "Pojďme se tedy podívat na celý framework."}
+{"dataset_id": "acl_6060", "sample_id": 390, "src_lang": "en", "tgt_lang": "cs", "output": "Datová sada je vložena do FAST,"}
+{"dataset_id": "acl_6060", "sample_id": 391, "src_lang": "en", "tgt_lang": "cs", "output": "a FAST provede fázi linking."}
+{"dataset_id": "acl_6060", "sample_id": 392, "src_lang": "en", "tgt_lang": "cs", "output": "Extrahovat se text z znalostní báze, což je v tomto příkladu abstrakt stránky na Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 393, "src_lang": "en", "tgt_lang": "cs", "output": "Poté reformuluje úlohu do úloh klasifikace na jednu větu."}
+{"dataset_id": "acl_6060", "sample_id": 394, "src_lang": "en", "tgt_lang": "cs", "output": "Aplikuje jazykový model na novou úlohu a získá pravděpodobnost pro každou třídu."}
+{"dataset_id": "acl_6060", "sample_id": 395, "src_lang": "en", "tgt_lang": "cs", "output": "Všimněte si, že jazykový model je již jemně doladěn na N-1 datových sadách pomocí předběžného multitaskového jemného doladění."}
+{"dataset_id": "acl_6060", "sample_id": 396, "src_lang": "en", "tgt_lang": "cs", "output": "Poté použijeme výstupní vektor jazykového modelu jako nově vygenerovanou funkci v počtu tříd."}
+{"dataset_id": "acl_6060", "sample_id": 397, "src_lang": "en", "tgt_lang": "cs", "output": "K vyhodnocení našeho frameworku používáme 17 klasifikačních datových sad v tabulce, které měříme velikostí, funkcemi, vyvážeností, doménou a počátečním výkonem. A"}
+{"dataset_id": "acl_6060", "sample_id": 398, "src_lang": "en", "tgt_lang": "cs", "output": "jako znalostní bázi používáme Wikipedii."}
+{"dataset_id": "acl_6060", "sample_id": 399, "src_lang": "en", "tgt_lang": "cs", "output": "Navrhujeme náš experiment jako live one-out vyhodnocení. Trénujeme FAST na 16 datových sadách a aplikujeme ho na 17. datovou sadu. Rozdělíme"}
+{"dataset_id": "acl_6060", "sample_id": 400, "src_lang": "en", "tgt_lang": "cs", "output": "také každou datovou sadu do čtyř foldů a aplikujeme čtyřfoldové cross-validation."}
+{"dataset_id": "acl_6060", "sample_id": 401, "src_lang": "en", "tgt_lang": "cs", "output": "Poté vygenerujeme novou funkci a vyhodnotíme ji pomocí pěti vyhodnocovacích klasifikátorů."}
+{"dataset_id": "acl_6060", "sample_id": 402, "src_lang": "en", "tgt_lang": "cs", "output": "V našem experimentu používáme architekturu založenou na BERT."}
+{"dataset_id": "acl_6060", "sample_id": 403, "src_lang": "en", "tgt_lang": "cs", "output": "Zde jsou výsledky našeho experimentu."}
+{"dataset_id": "acl_6060", "sample_id": 404, "src_lang": "en", "tgt_lang": "cs", "output": "Můžete vidět, že porovnáváme náš framework s jemným doladěním cílové datové sady, jemným doladěním cílové úlohy a předběžným multitaskovým jemným doladěním,"}
+{"dataset_id": "acl_6060", "sample_id": 405, "src_lang": "en", "tgt_lang": "cs", "output": "a náš reformulovaný fine-tuning dosahuje nejlepšího výsledku, nejlepšího výkonu."}
+{"dataset_id": "acl_6060", "sample_id": 406, "src_lang": "en", "tgt_lang": "cs", "output": "Zatímco mtDNN dosáhl 2% zlepšení oproti jemnému doladění cílové datové sady,"}
+{"dataset_id": "acl_6060", "sample_id": 407, "src_lang": "en", "tgt_lang": "cs", "output": "náš přístup dosáhl 6% zlepšení."}
+{"dataset_id": "acl_6060", "sample_id": 408, "src_lang": "en", "tgt_lang": "cs", "output": "Když se podíváme na malé datové sady, můžeme vidět, že výkon mtDNN klesá a zlepšení předběžné multitaskové fáze jemného doladění klesá,"}
+{"dataset_id": "acl_6060", "sample_id": 409, "src_lang": "en", "tgt_lang": "cs", "output": "ale náš výkon vzrostl na 11 % ve srovnání s jemným doladěním cílové úlohy samotné."}
+{"dataset_id": "acl_6060", "sample_id": 410, "src_lang": "en", "tgt_lang": "cs", "output": "Na závěr, FAST umožňuje few-shot obohacování od 35 vzorků v našem experimentu."}
+{"dataset_id": "acl_6060", "sample_id": 411, "src_lang": "en", "tgt_lang": "cs", "output": "Používá jednu architekturu pro všechny úlohy datových sad"}
+{"dataset_id": "acl_6060", "sample_id": 412, "src_lang": "en", "tgt_lang": "cs", "output": "a udržuje hlavy modelu."}
+{"dataset_id": "acl_6060", "sample_id": 413, "src_lang": "en", "tgt_lang": "cs", "output": "Ale přidává fázi reformulace,"}
+{"dataset_id": "acl_6060", "sample_id": 414, "src_lang": "en", "tgt_lang": "cs", "output": "rozšiřuje trénovací sadu a potřebuje cílovou hodnotu se sémantickým významem, abychom ji mohli vložit do jazykového modelu a použít ji v problému klasifikace na jednu větu. Děkuji."}
+{"dataset_id": "acl_6060", "sample_id": 415, "src_lang": "en", "tgt_lang": "cs", "output": "Ahoj,"}
