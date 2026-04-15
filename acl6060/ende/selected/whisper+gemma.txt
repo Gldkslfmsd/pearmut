@@ -1,0 +1,86 @@
+Hallo
+, mein Name ist Asaf Harari, und
+ich werde unser Papier vorstellen: "Few-Shot Tabulare Datenanreicherung unter Verwendung von Fine-Tuning Transformer-Architekturen".
+Data Scientists analysieren Daten und konzentrieren sich hauptsächlich auf die Manipulation der vorhandenen Features.
+Aber manchmal sind diese Features begrenzt.
+Die Generierung von Features unter Verwendung einer anderen Datenquelle kann erhebliche Informationen hinzufügen.
+Unser Forschungsziel ist die automatische tabulare Datenanreicherung unter Verwendung von freiem Text aus externen Quellen.
+Nehmen wir an, wir haben einen tabularen Datensatz und eine Wissensdatenbank.
+Wir benötigen einen automatischen Prozess, der Entity Linking und Textanalyse umfasst, um neue Features aus dem freien Text der Wissensdatenbank zu extrahieren.
+Unser Framework ist zunächst genau dieser automatische Prozess.
+Sehen wir uns ein Beispiel an. Ein Datensatz wird in FAST eingespeist.
+In diesem Beispiel ist der Datensatz ein Universitätsdatensatz,
+dessen Ziel die Klassifizierung von Universitäten in niedrigrangierte und hochrangierte Universitäten ist.
+als Wissensdatenbank verwenden wir Wikipedia.
+Die erste Phase von FAST ist das Entity Linking.
+Wenn jede Entität, in diesem Beispiel der Universitätsname, mit einer Entität in der Wissensdatenbank verknüpft wird und
+der Text der Entitäten der Wissensdatenbank extrahiert und dem Datensatz hinzugefügt wird.
+In diesem Beispiel ist der Text der Abstract der Wikipedia-Seite.
+Jetzt müssen wir Features aus dem abgerufenen Text generieren oder extrahieren.
+Wir benötigen also eine Feature-Extraktionsphase, die Textanalyse beinhaltet.
+Und dies ist die Hauptneuheit dieses Papers, und ich werde in den nächsten Folien näher darauf eingehen.
+Nach der Feature-Extraktionsphase gibt es eine Feature-Generierungsphase, in der wir die extrahierten Features verwenden, um eine kleine Anzahl neuer Features zu generieren.
+Zuerst werden... Features in der Anzahl der Klassen des ursprünglichen Datensatzes generiert.
+In diesem Beispiel hat der ursprüngliche Datensatz zwei Klassen,
+sodass FAST zwei neue Features generiert.
+Wenn der Datensatz jedoch fünf Klassen hat, generiert FAST fünf neue Features.
+Jedes Feature repräsentiert die Wahrscheinlichkeit für jede Klasse.
+Um den Text zu analysieren, verwenden wir den aktuellen Stand der Technik in der Textanalyse, der auf Transformer-basierten Sprachmodellen wie BERT, GPT, XML usw. basiert.
+Es ist jedoch unwahrscheinlich, dass wir ein Sprachmodell mit den Eingabedatensätzen trainieren können.
+Ein naiver Ansatz wäre ein Target-Task-Fine-Tuning.
+In der Feature-Extraktionsphase können wir ein peritrain-Sprachmodell herunterladen, das Sprachmodell über den Target-Datensatz feinabstimmen.
+In diesem Beispiel würden wir, um das Sprachmodell zu feinabstimmen, um Text in Klassen zu klassifizieren, Abstract in Klassen, niedrig oder hoch
+, die Ausgabe des Sprachmodells, die Wahrscheinlichkeit für jede Klasse, erhalten und diese als neue Features verwenden.
+Das Problem mit diesem Ansatz ist, dass Datensätze wenige verschiedene Entitäten-Texte haben können.
+In unserem Experiment enthalten fast die Hälfte der Datensätze weniger als 400 Samples, und der kleinste Datensatz enthält 35 Samples in seinem Trainingssatz.
+Um ein Sprachmodell mit diesem Datensatz feinabzustimmen, wäre ineffektiv.
+Aber wir können Vorwissen über vorab analysierte Datensätze nutzen,
+weil FAST über mehrere Datensätze angewendet wird. Wir können die N-Minus-Eins-Datensätze verwenden, um Informationen über die N-Minus-Eins-Datensätze zu sammeln und diese Informationen zu nutzen, wenn wir den N-ten Datensatz analysieren. Was
+wir vorschlagen, ist, eine weitere Fine-Tuning-Phase hinzuzufügen,
+eine vorläufige Multitask-Fine-Tuning-Phase,
+in der Sie das Sprachmodell über N-Minus-Eins-Datensätzen feinabstimmen, und
+dann führen wir eine weitere Fine-Tuning-Phase durch, die eine Target-Task-Fine-Tuning ist, in der wir das Sprachmodell über den N-ten Target-Datensatz feinabstimmen.
+Der Stand der Technik im Multitask-Fine-Tuning heißt mtDNN.
+In mtDNN hält mtDNN Heads in der Anzahl der Tasks im Trainingssatz.
+In diesem Beispiel gibt es vier Tasks im Trainingssatz, sodass mtDNN vier Heads hält, wie Sie im Bild sehen können, und
+es sammelt eine zufällige Batch aus dem Trainingssatz.
+Wenn die zufällige Batch zu beispielsweise Single-Sentence-Klassifikations-Tasks gehört, wird ein Forward- und Backward-Pass durch den ersten Head ausgeführt.
+Wenn die zufällige Batch zu einem Pairwise-Ranking-Task gehört, wird ein Forward- und Backward-Pass durch den letzten Head ausgeführt.
+In unserem Szenario ein Tableau-Datensatz, der die Anzahl der Klassen verifiziert.
+Es gibt also viele Tasks.
+MTDNN hält die Anzahl der Klassen Heads, Output-Layers.
+Außerdem muss MTDNN neue Heads für einen neuen Datensatz mit einer neuen Task initialisieren.
+Unser Ansatz, genannt Task Reformulation Fine-Tuning, ist, In unserem Ansatz wird Task Reformation Functioning, anstatt mehrere Heads zu halten, reformulieren wir jeden Datensatz in ein Sentence-per-Classification-Problem, das zwei Klassen-Tasks sind.
+Sehen wir uns ein Beispiel an.
+Hier ist unser Eingabedatensatz, der aus Entitäten, Features, Text und Klassen besteht, und
+wir reformulieren die Task von der Klassifizierung des Texts in niedrig und hoch in die Klassifizierung des Texts, des Abstracts und der Klasse in wahr oder falsch oder
+mit anderen Worten, wir trainieren das Sprachmodell, um ein Abstract und eine Klasse in ein Abstract und eine Klasse zu klassifizieren, wenn das Abstract zu der Klasse gehört oder nicht.
+Das Label-Vektor in diesem Fall bleibt also immer, besteht immer aus zwei Klassen.
+Und dies ist der Algorithmus für unseren reformulierten Fine-Tuning-Ansatz.
+Sehen wir uns das gesamte Framework an.
+Datensatz wird in FAST eingespeist, und
+dann führt FAST die Linking-Phase aus.
+Es extrahiert den Text aus der Wissensdatenbank, der in diesem Beispiel der Abstract der Wikipedia-Seite ist.
+Dann reformuliert es die Task in Sentence-per-Classification-Tasks. Wendet
+das Sprachmodell auf die neue Task an und erzeugt die Wahrscheinlichkeit für jede Klasse. Beachten
+Sie, dass das Sprachmodell bereits über N-Minus-Eins-Datensätzen mit einer vorläufigen Multitask-Fine-Tuning feinabgestimmt wurde.
+Dann verwenden wir den Output-Vektor des Sprachmodells als neu generiertes Feature in der Anzahl der Klassen.
+Um unser Framework zu evaluieren, verwenden wir einen 17 tabellarischen Klassifikationsdatensatz, den wir in Größe, Features, Balance, Domain und Initial Performance schreiben. Und
+als Wissensdatenbank verwenden wir Wikipedia.
+Wir gestalten unser Experiment als Live-One-Out-Evaluation. Wir trainieren FAST über 16 Datensätze und wenden es auf den 17. Datensatz an.
+Wir teilen außerdem jeden Datensatz in vier Falts und wenden vier Falts-Cross-Validation an.
+Dann generieren wir das neue Feature und evaluieren es mit fünf Evaluierungs-Klassifikatoren.
+Wir verwenden in unserem Experiment eine BERT-basierte Architektur.
+Hier sind die Ergebnisse für unser Experiment.
+Sie können sehen, dass wir unseren Framework mit Target-Dataset-Fine-Tuning, Target-Task-Fine-Tuning und MTDNN-vorläufigem Fine-Tuning vergleichen,
+und unser reformulierter Fine-Tuning erzielt das beste Ergebnis, die beste Performance. Während
+mtDNN eine 2%-ige Verbesserung gegenüber dem Target-Dataset-Fine-Tuning erreichte,
+erreichte unser Ansatz eine 6%-ige Verbesserung.
+Wenn wir uns die kleinen Datensätze ansehen, können wir sehen, dass die Performance von mtDNN abnimmt und die Verbesserung der vorläufigen Multitask-Fine-Tuning-Phase abnimmt,
+aber unsere Performance auf 11% gegenüber dem reinen Target-Task-Fine-Tuning steigt.
+Zusammenfassend ermöglicht FAST Few-Shot-Anreicherung aus 35 Samples in unserem Experiment.
+Es verwendet eine Architektur für alle Tasks’ Datensätze.
+Es hält den Head des Modells.
+Aber es fügt eine Reformulierungsphase hinzu,
+die den Trainingssatz erweitert und einen Target-Wert mit semantischer Bedeutung benötigt, den wir in das Sprachmodell einspeisen und in einem Sentence-per-Classification-Problem verwenden können. Vielen Dank.
+Hallo

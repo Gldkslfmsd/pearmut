@@ -1,0 +1,86 @@
+Hallo
+, mein Name ist Asa Farari und
+ich werde unsere Arbeit FUSHOT TABLAR DATA-BRICHTMING mit fein abgestimmten Transformers-Architekturen präsentieren.
+Data-Wissenschaftler analysieren Daten und konzentrieren sich hauptsächlich auf die Manipulation der bestehenden Datenmerkmale.
+Aber manchmal sind diese Merkmale begrenzt.
+Die Generierung von Merkmalen mit einer anderen Datenquelle kann erhebliche Informationen hinzufügen.
+Unser Forschungsziel ist die automatische TABLAR-DATA-BRICHTMING mit externen Quellen, freiem Text.
+Nehmen wir an, wir haben eine TABLAR-Datenmenge und eine Wissensbasis.
+Wir benötigen einen automatischen Prozess, der Intitulation beinhaltet. und Textanalyse, um neue Funktionen aus dem kenntnisbasierten Free-Text zu extrahieren.
+Unser Framework FEST ist genau dieser automatische Prozess.
+Lassen Sie uns also ein Beispiel betrachten. Eine Datenmenge wird in FEST eingeführt.
+In diesem Beispiel ist die Datenmenge Universitätsdatenmenge, bei der
+das Ziel ist, Universitäten in niedrig rankende und hoch rankende Universitäten zu klassifizieren.
+als Knowledge-Basis verwenden wir Wikipedia.
+Die erste Phase von FEST ist Entity-Linking.
+In diesem Beispiel ist der Universitätsname mit einer Entität in der Knowledge-Basis verknüpft und
+der Text der Entitäten in der Knowledge-Basis wird extrahiert und zu dem Datensatz hinzugefügt.
+In diesem Beispiel ist der Text der Wikipedia-Page-Abstract.
+Jetzt müssen wir Features aus dem erhaltenen Text generieren oder extrahieren.
+Wir benötigen also eine Feature-Extraction-Phase, die Textanalyse beinhaltet. Und
+das ist die Hauptanalyse. von diesem Papier und ich werde in den nächsten Folien tief eintauchen.
+Nach der Feature-Extraction-Phase gibt es eine Feature-Generation-Phase, in der wir die extrahierten Features verwenden, um eine kleine Anzahl neuer Features zu generieren.
+Zuerst generieren wir Features in der Anzahl der Klassen des ursprünglichen Datensatzes.
+In diesem Beispiel hat der ursprüngliche Datensatz zwei Klassen,
+also erst generieren wir zwei neue Features, aber
+wenn der Datensatz fünf Klassen hat, generieren fünf neue Funktionen.
+Jede Funktion repräsentiert die Wahrscheinlichkeit für jede Klasse.
+Um den Text zu analysieren, verwenden wir den aktuellen State of the Art der Textanalyse, die Transformer-basierte Sprachmodelle wie BERT, GPT, XLEDs und so weiter sind.
+Es ist jedoch unwahrscheinlich, dass wir ein Sprachmodell mit den Input-Datensätzen trainieren können.
+Eine naive Methode wäre eine Ziel-Task-Fine-Tuning.
+In der Feature-Extraction-Phase können wir das Per-Trained-Language-Modell herunterladen, das Sprachmodell fine-tunen. über das Zieldatensatz.
+In diesem Beispiel, um das Sprachmodell zu verfeinern, um Text in Klassen, Abstract in Klassen, Low oder High zu
+klassifizieren, erhalten Sie die Sprachmodell-Ausgabe, die die Wahrscheinlichkeit für jede Klasse ist, und verwenden Sie sie als neue Funktionen.
+Das Problem bei diesem Ansatz ist, dass Datensätze möglicherweise wenige unterschiedliche Entitäten wie Text enthalten.
+In unserem Experiment enthalten fast die Hälfte der Datensätze weniger als 400 Proben und die kleinste Datensätze enthalten 35 Proben. Zum Beispiel in seinem Trainings-Set.
+Daher wäre es ineffektiv, ein Sprachmodell über diesen Datensatz zu verfeinern.
+Wir können jedoch vorherige Kenntnisse über voranalysierte Datensätze nutzen,
+da wir FAST über mehrere Datensätze anwenden. Wir können die N-1-Datensätze verwenden, um Informationen über die N-1-Datensätze zu sammeln und diese Informationen zu verwenden, wenn wir den n-Datensatz analysieren. Was
+wir vorschlagen, ist, eine weitere Verfeinerungsfunktion hinzuzufügen.
+Eine vorläufige Phase der Feinabstimmung für mehrere Aufgaben,
+wenn wir das Sprachmodell über n-1-Datensätze feinabstimmen.
+Dann führen wir eine weitere Phase der Feinabstimmung durch, die eine Feinabstimmung für Zielaufgaben ist, wenn wir das Sprachmodell über den n-Zieldatensatz feinabstimmen.
+Die neueste Phase der Feinabstimmung für mehrere Aufgaben, die MTDN genannt wird.
+In MTDN hält MTDN eine Anzahl von Aufgaben im Trainingsatz aufrecht.
+In diesem Beispiel gibt es vier Aufgaben im Trainingssatz. MTDN hält also vier Köpfe, wie Sie im Bild sehen können. Und
+es sampelt einen zufälligen Batch aus dem Trainingssatz. Und
+wenn der zufällige Batch zum Beispiel Sing und Selton-Klassifizierungsaufgaben gehört, führt er einen Vorwärts- und Rückwärtspass durch den ersten Kopf aus. Und
+wenn der zufällige Batch zu einer Paar-Ranking-Aufgabe gehört, führt er einen Vorwärts- und Rückwärtspass durch den letzten Kopf aus.
+In unserem Szenario variiert eine Tabelle der Daten sätze die Anzahl der Klassen.
+Es gibt also viele Aufgaben.
+MTDNN hält die Anzahl der Klassen-Heads-Ausgaben-Schichten aufrecht.
+Und zusätzlich muss MTDNN neue Heads für eine neue Datenmaschine mit einer neuen Aufgabe initialisieren.
+Unser Ansatz namens Task-Reformulation-Fine-Tuning ist in unserem Ansatz Task-Reformulation-Fine-Tuning. Anstatt mehrere Überschriften zu verwenden, reformulieren wir jedes Datensatz in ein Satz-Per-Classification-Problem, das zwei Klasse-Taschen ist.
+Lassen Sie uns ein Beispiel betrachten.
+Hier ist unser Input-Datensatz, der von Entitäten, Funktionen, Text und Klassen besteht.
+Wir reformulieren die Tasche von der Klassifizierung des Textes in Low und High, um den Text, den Abstrakt und die Klasse in True oder False zu
+klassifizieren. Wir trainieren das Sprachmodell, um ein Abstrakt und eine Klasse zu klassifizieren, um zu abstrahieren und zu klassifizieren, ob das Abstrakt zur Klasse gehört oder nicht.
+Der Etikettvektor bleibt in diesem Fall also immer mit zwei Klassen bestehen. Und
+das ist der Algorithmus für unseren formulierten Feintuning-Ansatz.
+Full Framework, Daten set fed into fast und
+
+dann fast execute into the linking phase.
+Es extrahiert den Text aus der Knowledge-Basis, was in diesem Beispiel der Abstract der Wikipedia-Page ist.
+Dann reformuliert es die Task in Satz für Klassifizierungs-Tasken. Appliquiert
+das Language-Modell auf die neue Task und die Ausput-Likelihood für jede Klasse. Beachten
+Sie, dass das Language-Modell bereits über n minus 1 Daten set using a preliminary multitask fine-tuning.
+Dann verwenden wir den Output-Vector des Language-Modells als eine neu generierte Funktion in der Anzahl der Klassen.
+Um unsere Framework zu evaluieren, verwenden wir eine 17-Tabular-Classification-Datenset, die die Size-Features-Balance-Domain und initiale Performance ausbalanciert. Und
+als Knowledge-Basis verwenden wir Wikipedia.
+Wir designten unser Experiment als eine Evaluation, wenn wir fast über 16 Datasets trainieren und es auf das 17. Dataset anwenden.
+Wir splitzen auch jedes Dataset in vier False und wenden vier False-Cross-Validation an.
+Dann generieren wir die neuen Funktionen und evaluieren sie mit fünf Evaluation-Classifiers.
+Wir verwenden in unserem Experiment-Based-Belt-Based-Architektur.
+Hier sind die Ergebnisse für unsere
+Sie können sehen, dass wir unsere Framework zu Target-Datensatz-Fine-Tuning, Target-Task-Fine-Tuning und MTDNN-Preliminäre Fine-Tuning vergleichen.
+Und unsere reformulierte Fine-Tuning erzielt das beste Ergebnis, die beste Performance. Während
+MTDNN 2% Verbesserung über die Target-Datensatz-Fine-Tuning
+erzielt, erzielte unsere Ansätze 6%.
+Wenn wir uns den kleinen Datensatz ansehen, können wir sehen, dass die Leistung von MTDNN abnimmt und die Verbesserung der preliminären Multitask-Fine-Tuning-Phase abnimmt zu 1,5 Prozent,
+aber unsere Leistung steigt zu 11 Prozent. im Vergleich zu der Target-Task-Fine-Tuning-Alone.
+Für Summing, FAST ermöglicht View-Shot-Enrichment von 35 Samples. Unser Experiment.
+Es verwendet eine Architektur für alle Aufgaben-Datensätze
+und behält den Kopf des Modells bei.
+Aber es fügt drei Formulierungsphasen hinzu.
+Es erweitert den Train-Satz und benötigt einen Zielwert mit semantischer Bedeutung, damit wir ihn in das Sprachmodell einfügen und in der Satzpaar-Klassifizierungsproblematik verwenden können. Vielen Dank.
+Hallo

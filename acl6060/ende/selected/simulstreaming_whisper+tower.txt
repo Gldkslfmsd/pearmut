@@ -1,0 +1,86 @@
+Hallo
+. Mein Name ist Asaf Harari. Und
+ich werde unseren Artikel „Few Shot Tabular Data Enrichment Using Finetuning Transformers Architectures“ vorstellen.
+Das ist ein Wissenschaftler, der Daten analysiert und sich hauptsächlich auf die Manipulation der vorhandenen Merkmale der Daten konzentriert.
+Aber manchmal sind diese Merkmale begrenzt.
+Merkmalsgenerierung unter Verwendung einer anderen Datenquelle kann erhebliche Informationen hinzufügen.
+Unser Forschungsziel ist die Automatisierung der Tabellen-Datenbereicherung unter Verwendung externer Quellen freier Texte.
+Nehmen wir an, wir haben einen Tabellen-Datensatz und eine Wissensdatenbank.
+Wir benötigen einen automatischen Prozess, derFolgendes umfasst: In die Verknüpfung und Textanalyse, um neue Merkmale für die Wissensdatenbank zudie Wissensdatenbank aus freiem Text zu extrahieren.
+Unsere Freunde. Zuerst ist genau dieser automatischeProzess.
+Also, lassen Sie uns ein Beispiel beenden. In dem ich sagte, es wurde in FAST eingespeist.
+In diesem Beispiel ist der Datensatz ein Universitätsdatensatz, wenn
+das Ziel darin besteht, Universitäten in niedrig eingestufte Universitäten und hoch eingestufte Universitäten zu klassifizieren.
+als Wissensbasis verwenden wir Wikipedia.
+Die erste Phase von FAST ist die Entitätsverknüpfung.
+Wenn jede Entität, in diesem Beispiel der Universitätsname, mit einer Entitätin der Wissensdatenbank verknüpft wird. Und
+der - und der - Text der Entitäten der Wissensdatenbank wird extrahiert und dem Datensatz hinzugefügt.
+In diesem Beispiel ist der Text die -Wikipedia-Seitenzusammenfassung.
+Jetzt müssen wir generieren oder Merkmale ausdem Abrufangriff extrahieren.
+Wir müssenin einer Merkmalsextraktions-Phase... Und wir können Textanalyse einbeziehen.
+Und dies ist die Hauptfähigkeit dieses Papiers. Und ich werde in den nächsten Folien tief daraufeingehen.
+Nach derMerkmalsextraktions-Phase, die Gibt es eine Phasen der Merkmalsgenerierung, wenn wir das extrahierte Merkmal verwenden, um eine kleine Anzahlneuer Merkmale zu generieren? Schnell.
+Generieren.Und. Ja. Funktionen in der Anzahl der Klassen des ursprünglichen Datensatzes.
+In diesem Beispiel hat der ursprüngliche Datensatz zwei Klassen.
+Also, zuerst zwei Klassen generieren. Also, zuerst zwei neue Funktionen generieren. Aber
+wenn der Datensatz fünf Klassen hat, zuerst fünf neue Funktionen generieren.
+JedeFunktion, Stellen Sie die Wahrscheinlichkeitfür jede Klasse dar.
+Um den Text zu analysieren, verwenden wir den aktuellen Stand der Technik der Textanalyse, nämlich auf Basis von Sprachmodellen wie BERT, GPT, XNLs. Und so weiter.
+Es ist, aber es ist unwahrscheinlich, dass wir Sprachmodelle mit denEingabedatensätzen trainieren können.
+AlsoOkay. Also, wenn ich mich sogar nähere, wirdeine Zielaufgabe-Feinabstimmung erfolgen. Ähm,also,
+ähem, In der Merkmalsextraktions-Phase können wir das Peritrain-Sprachmodell herunterladen. Das Sprachmodell wird dann auf dem Zieldatensatz verfeinert.
+In diesem Beispiel dient die Verfeinerung des Sprachmodells der Klassifizierung von Texten und der Einteilung in Klassen. Abstrahieren Sie in Klassen, niedrig oderoder hoch.
+Und dann... Bitte empfangen Sie die Ausgabe des Sprachmodells, die die Wahrscheinlichkeit für jede Klasse darstellt, und verwenden Sie diese alsneue Merkmale. -
+Das Problem mit diesem Ansatz ist, dass der Datensatz möglicherweise nur wenige eindeutige EntitätenEntitäten enthält. - Das Problem mit diesem Ansatz ist, dass der Datensatz möglicherweise nur wenige eindeutige Entitäten enthält.
+In unserem Experiment enthielten fast die Hälfte der Datensätze weniger als 400 Proben, und der kleinste Datensatz enthielt... 34 Proben, in seinem... in seinem Trainingsdatensatz.
+Also, um ein Sprachmodell über einen... diesen Datensatz zu optimieren, wirddas effektiv sein.
+Aber wir können vorhandenes Wissen über vorab analysierte Datensätze nutzen,
+da wir FAST auf mehrere Datensätze anwenden. Wir können das n minus eins Datensätzeverwenden. Und Sammeln Sie Informationen über den in minus one Datensatz und verwenden Sie diese Informationen, wenn wir den Instance-Datensatzden Instance-Datensatz analysieren. Vielen Dank. Was
+wir... Was wir vorschlagen, ist, eine weitere Feinanpassungsphase hinzuzufügen,
+eine vorläufige Feinanpassungsphase für
+mehrere Aufgaben. Wenn Sie das Sprachmodell über n-1 Datensätze und die... und die... und
+dann wieder ausführen, führen Sie eine weitere Feinanpassungsphase durch, die eine Feinanpassung für eine Zielaufgabe ist, wenn Sie... wenn wir das Sprachmodell über die n-teZieldatensatz feinabstimmen.
+Also, Der aktuelle Stand der Technik bei der Multi-Task-Modellierung, Multi-Task-Feinabstimmung genanntMT-DNN.
+Bei MT-DNN, MTDNN betreibt... ein... Hauptquartier in der Anzahl von... Aufgaben. Im Trainingsdatensatz. Also, wenn...
+in diesem Beispiel... vier... Aufgaben im Trainingsdatensatz sind,dann... MTDNN... Amen. Bewahren Sie vier Köpfe. Wie Sie sehen können, das Bild. Und.
+Es nimmt Proben. Führen Sie die Tasche. Von. A. Aus dem Trainingsdatensatz. Und
+wenn die zufällige Charge zu. Zum Beispiel, Sing und Seltzers Klassifizierungsaufgabe gehört. Es führt das Vorwärts- und Rückwärtspaar durch. Durch den ersten Kopf. Und
+wenn die zufällige Charge zu paarweisem Ranking . Aufgabe gehört. Es ist die Einstellung des Vorwärts- und Rückwärtspaares. Durch einen. Den letztenKopf.
+Okay. Und ich werde jetzt sagen, Sie wissen, tabellarische Datensätze, wir führen die Anzahl der Klassen durch.Und.
+Und Also gibt es viele, äh, Aufgaben.äh,
+äh, Und heute werde ich darüber sprechen, wie man die Anzahl der Klassenköpfe, Ausgabeebenen und die Addition
+sowie die zusätzlich leeren DNA-Bausteine zur Initiierung neuer Köpfe für einen neuen Datensatzeinen neuen Datensatz mit einer neuen Aufgabe beibehält. Also, -
+Unser Ansatz nennt sich Task Reformulation Fine-tuning, äh,- äh, Wir befinden uns in unserem Weg, die Aufgabenreformierung zu gestalten, anstatt mehrere Abteilungen aufrechtzuerhalten. Wir reformulieren jeden Datensatz in einen Satz pro Klassifikationsproblem, was bedeutet, dass es sich um zwei Klassenhandelt, Aufgaben.
+Lassen Sie uns also ein Beispiel sehen.
+Hier ist unser Datensatz, der aus einer Gebühr in den Merkmalen des Textes und den Klassen besteht, und
+wir werden ihn für die Aufgabe neu formulieren, den Text zu klassifizieren, um die Höhe zu verringern, um den Text, das Abstrakt und die Klasse zu klassifizieren, als wahr oder falsch, oder
+mit anderen Worten, wir trainieren das Sprachmodell, um das Abstrakt und die Klasse zuklassifizieren. Wählen Sie, ob Sieabstrahieren oder klassifizieren möchten. Und wenn der Abstract zur Klasse gehörtoder nicht.
+Also, äh, der Label-Vektor ist in diesem Fall stabil, äh, immer,äh, äh Eh, die immer auszwei Klassen besteht.
+Die Und dies ist der, ähm, Algorithmus für unsere, ähm, Feinabstimmung. Die einzige Formel, die den Abstimmungsansatz findet.
+Lassen Sie uns also das vollständige Framework sehen.
+ähm, dass der Satz in den schnellen,äh, ähm... Und
+dann, ähm... schnell in die Verknüpfungsphase übergehen.
+Es... ähm... den Text aus der Wissensdatenbank extrahieren, die in diesem Beispiel der Abstract der Wikipedia-Seite ist.
+Dann... ähm... die Aufgabe umformulieren in eine pro... äh... Satz pro...Klassifizierungsaufgabe. Und... *ahem*
+Ich habe den Sprachmodus auf die neue Aufgabe angewendet, und die Ausgabewahrscheinlichkeit für jede Klasse. *ahem*
+Beachten Sie, dass, äh, das Sprachmodell,äh, *ah Alles klar. Vielen Dank. Vielen Dank. Vielen Dank. Vielen Dank. Vielen Dank. VielenDank. Vielen Dank. Ich werde Ihnen zeigen, wie das geht.
+Dann verwenden wir, ähm, ähm, den Ausgabevektor des, äh, Sprachmodells. Als, äh, neu generiertes Merkmal in der Anzahl derKlassen.
+Also, Sie wissen ja, um den... unseren Rahmen zu bewerten, verwenden wir eine 17-tabellarische Klassifizierungsdatenbank, die wir in Bezug auf Größe, Merkmale, Ausgewogenheit, Domäne undanfängliche Leistung auswerten. -Ja. - Und
+als Wissensbasis verwenden wir Wikipedia.
+Nun, Designerware-Erfahrung ist eine Live-Erfahrung, und, und, bewerten. Wenn wir trainieren, schnell, über, sechs, zehn, Datensätze, und wenden es an, auf diesen, sieben, Zähne, Datensatz. Also, wir auch, jeder,
+wir teilen auch jeden Datensatz in, vier, vier,und wenden an, Scheiß auf falsche Kreuzvalidierung.
+Dann,äh, äh Mit Jenna bewerten Siesie dann anhand von fünf Bewertungsklassifikatoren.
+Wir verwenden eine neuartige, auf einem Gürtel basierendeArchitektur.
+Gott, die Ergebnisse für unser Experiment,Sie
+können das sehen, äh, Wir vergleichen unseren Rahmen mit dem Ziel-Datensatz,äh, äh. Feinabstimmung Zielaufgabe Feinabstimmung.Ähm, ähm Und ein... MTDNN vorläufiges Feinabstimmenund... äh
+... Wie formuliert, äh, Feinabstimmung erreichen, um das beste, äh, Ergebnis zu erzielen,die beste Leistung.
+WährendMTDNN, es, äh, Wir haben eine Verbesserung von 2% im Vergleich zum Zieldatensatz -Feintuning erreicht.
+Unser Ansatz erzielte eine Verbesserung von 6%,
+wenn wir uns ansehen,äh, äh Auf diesem kleinen Datensatz können wir sehen, dass die Leistung von leerer DNA abnimmt und sie den Beweis ihrer permanenten vorläufigen Multitask-Feinabstimmungsphase auf einen Punkt fünf reduzieren. Eine Perspektive. Prozent.
+Aber unsere Leistung stieg auf 11%. Prozent. A. im Vergleich zurZielaufgabe. Feinabstimmung entlang.
+Für etwas Tinte ermöglicht Fusion Shot schnell die Anreicherung, und aus 35 Proben in unseren Experimenten verwendet
+es eine Architektur für allealle Aufgaben, Datensätze.
+Und er behält den Kopfer behält den Kopf des Modells bei.
+Aber es fügt eine Reformulierungsphase hinzu.
+Es erweitert den Zug und benötigt einen Zielwert mit semantischer Bedeutung. So können wir ihn in das Sprachmodell einfüttern und in der Problemstellung pro Satzverwenden. Okay. VielenDank. Vielen Dank.
+Hallo
