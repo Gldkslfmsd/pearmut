@@ -1,0 +1,182 @@
+{
+  "stel-acl6060.111-ende": {
+    "mz": {
+      "progress": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": 1776761896.482,
+      "time_end": 1776768942.119,
+      "time": 2947.3749997615814,
+      "url": "annotate?campaign_id=stel-acl6060.111-ende&user_id=mz",
+      "token_correct": "737f51f375",
+      "token_incorrect": "6215d4e438"
+    },
+    "dm": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-ende&user_id=dm",
+      "token_correct": "439c769fb9",
+      "token_incorrect": "1d1eff7455"
+    },
+    "annotator3": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-ende&user_id=annotator3",
+      "token_correct": "893e06ad53",
+      "token_incorrect": "ce52b29dd2"
+    },
+    "annotator4": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-ende&user_id=annotator4",
+      "token_correct": "83c8ea5c84",
+      "token_incorrect": "adc42021ec"
+    }
+  },
+  "stel-acl6060.111-encs": {
+    "dm": {
+      "progress": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": 1776330233.174,
+      "time_end": 1776333680.214,
+      "time": 3058.3949995040894,
+      "url": "annotate?campaign_id=stel-acl6060.111-encs&user_id=dm",
+      "token_correct": "f413431286",
+      "token_incorrect": "5e300940f7"
+    },
+    "annotator2": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-encs&user_id=annotator2",
+      "token_correct": "015928eec2",
+      "token_incorrect": "7ed733fc1d"
+    },
+    "annotator3": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-encs&user_id=annotator3",
+      "token_correct": "a3cb9be6e9",
+      "token_incorrect": "93d190a3f9"
+    },
+    "annotator4": {
+      "progress": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_start": null,
+      "time_end": null,
+      "time": 0,
+      "url": "annotate?campaign_id=stel-acl6060.111-encs&user_id=annotator4",
+      "token_correct": "fd4b80eb3e",
+      "token_incorrect": "cd5292d4d2"
+    }
+  }
+}
