@@ -528,7 +528,7 @@ function setupCandidateInteractions(
                             "start_i": left_el_i,
                             "end_i": right_el_i,
                             "category": null,
-                            "severity": null,
+			    "severity": state.mqm_severities.length === 0 ? "major" : null,
                         }
 
                         if (state.response_log[item_i][model].error_spans.some(span => {
@@ -565,6 +565,15 @@ function setupCandidateInteractions(
                         )
 
                         $("body").append(toolbox)
+
+			if (error_span.severity) {
+			    for (let obj of tgt_chars_objs) {
+				if (obj.el_i >= left_el_i && obj.el_i <= right_el_i) {
+				    $(obj.el).addClass(`error_${error_span.severity}`)
+				}
+			    }
+			    check_unlock()
+			}
 
                         // handle hover on toolbox
                         toolbox.on("mouseenter focusin contextmenu", function (e) {
