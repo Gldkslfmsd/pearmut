@@ -916,17 +916,19 @@ async function display_next_payload(response: DataPayload) {
     // Cleanup toolboxes and handlers from previous item
     cleanupPreviousItem()
 
-    // Campaign-level defaults apply only when no user preference is stored yet.
-    if (!has_stored_settings.show_alignment && response.info.show_alignment !== undefined) {
+    // Campaign-level settings are enforced and cannot be changed by the annotator.
+    if (response.info.show_alignment !== undefined) {
         state.settings.show_alignment = response.info.show_alignment
         $("#settings_approximate_alignment").prop("checked", state.settings.show_alignment)
         $("#settings_approximate_alignment").trigger("change")
+        $("#settings_approximate_alignment").prop("disabled", true)
     }
 
-    if (!has_stored_settings.word_level && response.info.word_level !== undefined) {
+    if (response.info.word_level !== undefined) {
         state.settings.word_level = response.info.word_level
         $("#settings_word_level").prop("checked", state.settings.word_level)
         $("#settings_word_level").trigger("change")
+        $("#settings_word_level").prop("disabled", true)
     }
 
     redrawProgress(response.info.item_i, response.progress_welcome, response.progress_goodbye, response.progress, navigate_to_item)
