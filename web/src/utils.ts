@@ -628,6 +628,7 @@ export type ProtocolInfo = {
     assignment?: string,
     dynamic_models?: number,
     docs_per_user?: number,
+    require_full_annotation?: boolean,  // Require every error span/score/slider before Next unlocks (default: true)
 }
 
 

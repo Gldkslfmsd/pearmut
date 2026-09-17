@@ -58,6 +58,10 @@ const state = {
     protocol_error_categories: false,
     mqm_categories: MQM_ERROR_CATEGORIES as { [key: string]: string[] } | "input",
     mqm_severities: MQM_SEVERITIES as string[],
+    // Whether Next requires every error span/score/slider to be filled in
+    // before it unlocks (default: true, the original Pearmut behavior).
+    // Set from campaign info's `require_full_annotation` in display_next_item.
+    require_full_annotation: true,
 }
 
 const has_stored_settings = {
@@ -101,58 +105,61 @@ function check_unlock() {
     state.incomplete_items_i = []
     state.incomplete_targets = []
 
-    // Check if all error spans are complete (have required severity and category based on protocol)
-    if (state.protocol_error_spans || state.protocol_error_categories) {
-        state.response_log.forEach((doc_responses, i) => {
-            let hasIncompleteSpan = false;
-            for (const [model, r] of Object.entries(doc_responses)) {
-                let modelHasIncomplete = false;
-                for (const span of r.error_spans) {
-                    if (!isSpanComplete(span, state.protocol_error_categories, state.mqm_categories)) {
-                        modelHasIncomplete = true;
+    if (state.require_full_annotation) {
+        // Check if all error spans are complete (have required severity and category based on protocol)
+        if (state.protocol_error_spans || state.protocol_error_categories) {
+            state.response_log.forEach((doc_responses, i) => {
+                let hasIncompleteSpan = false;
+                for (const [model, r] of Object.entries(doc_responses)) {
+                    let modelHasIncomplete = false;
+                    for (const span of r.error_spans) {
+                        if (!isSpanComplete(span, state.protocol_error_categories, state.mqm_categories)) {
+                            modelHasIncomplete = true;
+                        }
+                    }
+                    if (modelHasIncomplete) {
+                        state.incomplete_targets.push({ i, model })
+                        hasIncompleteSpan = true;
                     }
                 }
-                if (modelHasIncomplete) {
-                    state.incomplete_targets.push({ i, model })
-                    hasIncompleteSpan = true;
+                if (hasIncompleteSpan) {
+                    state.incomplete_items_i.push(i)
                 }
-            }
-            if (hasIncompleteSpan) {
-                state.incomplete_items_i.push(i)
-            }
-        })
-    }
+            })
+        }
 
-    // Check if all scores are set
-    state.response_log.forEach((doc_responses, i) =>
-        Object.entries(doc_responses).forEach(([model, r]) => {
-            let modelHasIncomplete = false;
-            if (r.sliders) {
-                // Custom sliders mode: all sliders must be non-null (no score required)
-                for (const [sliderName, val] of Object.entries(r.sliders)) {
-                    if (val === null) {
+        // Check if all scores are set
+        state.response_log.forEach((doc_responses, i) =>
+            Object.entries(doc_responses).forEach(([model, r]) => {
+                let modelHasIncomplete = false;
+                if (r.sliders) {
+                    // Custom sliders mode: all sliders must be non-null (no score required)
+                    for (const [sliderName, val] of Object.entries(r.sliders)) {
+                        if (val === null) {
+                            modelHasIncomplete = true;
+                            if (!state.incomplete_targets.some(t => t.i === i && t.model === model && t.subTarget === sliderName)) {
+                                state.incomplete_targets.push({ i, model, subTarget: sliderName })
+                            }
+                        }
+                    }
+                } else {
+                    // Single score mode: the score must be set
+                    if (r.score == null) {
                         modelHasIncomplete = true;
-                        if (!state.incomplete_targets.some(t => t.i === i && t.model === model && t.subTarget === sliderName)) {
-                            state.incomplete_targets.push({ i, model, subTarget: sliderName })
+                        if (!state.incomplete_targets.some(t => t.i === i && t.model === model && t.subTarget === "score")) {
+                            state.incomplete_targets.push({ i, model, subTarget: "score" })
                         }
                     }
                 }
-            } else {
-                // Single score mode: the score must be set
-                if (r.score == null) {
-                    modelHasIncomplete = true;
-                    if (!state.incomplete_targets.some(t => t.i === i && t.model === model && t.subTarget === "score")) {
-                        state.incomplete_targets.push({ i, model, subTarget: "score" })
+                if (modelHasIncomplete) {
+                    if (!state.incomplete_items_i.includes(i)) {
+                        state.incomplete_items_i.push(i)
                     }
                 }
-            }
-            if (modelHasIncomplete) {
-                if (!state.incomplete_items_i.includes(i)) {
-                    state.incomplete_items_i.push(i)
-                }
-            }
-        })
-    )
+            })
+        )
+    }
+
     if (state.incomplete_items_i.length > 0) {
         $("#button_next").addClass("button-disabled")
         $("#button_next").val("Incomplete 🚧")
@@ -990,6 +997,7 @@ async function display_next_payload(response: DataPayload) {
     state.protocol = response.info.protocol
     state.protocol_error_spans = response.info.protocol == "ESA" || response.info.protocol == "cESA" || response.info.protocol == "MQM"
     state.protocol_error_categories = response.info.protocol == "MQM"
+    state.require_full_annotation = response.info.require_full_annotation !== false
 
     // Use custom MQM categories if provided, otherwise use default
     if (response.info.mqm_categories === "input") {

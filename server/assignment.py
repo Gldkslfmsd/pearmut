@@ -38,6 +38,7 @@ CAMPAIGN_INFO_PUBLIC = {
     "assignment",
     "dynamic_models",
     "docs_per_user",
+    "require_full_annotation",
 }
 
 
