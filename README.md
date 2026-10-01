@@ -14,7 +14,7 @@
   - [Assignment Types](#assignment-types)
 - [Advanced Features](#advanced-features)
   - [Pre-filled Error Spans (ESA<sup>AI</sup>)](#pre-filled-error-spans-esaai)
-  - [Custom MQM Taxonomy](#custom-mqm-taxonomy)
+  - [Custom Protocol](#custom-protocol)
   - [Custom Score Sliders](#custom-score-sliders)
   - [Textfield comment box](#textfield-comment-box)
   - [Tutorial and Attention Checks](#tutorial-and-attention-checks)
@@ -205,10 +205,9 @@ To enable a textfield for commenting, post-editing or translation tasks, use the
 - `"visible"`: Textfield always visible
 - `"prefilled"`: Textfield visible and pre-filled with model output for post-editing
 
-### Custom MQM Taxonomy
+### Custom Protocol 
 
-For MQM protocol campaigns, you can define a custom error taxonomy instead of using the default MQM categories. Specify `mqm_categories` in the campaign `info` section as a dictionary mapping main categories to lists of subcategories:
-
+You can customize an existing protocol, such as MQM, by overriding parts of its configuration. The example below defines a custom MQM error taxonomy. To set one, add `mqm_categories` to the campaign's `info` section, mapping each main category to a list of subcategories:
 
 ```python
 {
@@ -218,32 +217,42 @@ For MQM protocol campaigns, you can define a custom error taxonomy instead of us
     "mqm_categories": {
       "General": ["Accuracy", "Fluency"],
       "Audio-specific": ["Inaudible", "Background noise", "Speaker overlap", "Misinterpretation"],
-      "Style": ["Awkward", "Embarassing"],
-      "Unknown": []                    # Category with no subcategories
+      "Style": ["Awkward", "Embarrassing"],
+      "Unknown": []  # A category without subcategories
     }
   },
   "campaign_id": "custom_mqm_example",
-  "data": [...]
+  "data": [...]  # Your campaign data, omitted here
 }
 ```
 
-If `mqm_categories` is not provided, the default MQM taxonomy will be used. The empty string key `""` provides an unselected state in the dropdown. Categories with empty subcategory lists (e.g., `"Style": []`) do not require a subcategory selection.
-The severity levels can also be customized via `mqm_severities` (default: `["Minor", "Major"]`):
+If `mqm_categories` is omitted, the default MQM taxonomy is used. A category with an empty subcategory list (such as `"Unknown": []`) can be selected on its own, with no subcategory required. The empty string `""` represents the unselected state in the dropdown.
+
+#### Severities
+
+By default, annotators choose between `"Minor"` and `"Major"`. To change this, set `mqm_severities`:
 
 ```json
 "mqm_severities": ["Neutral", "Minor", "Major", "Critical"]
 ```
 
-See [examples/custom_mqm.json](examples/custom_mqm.json) for a complete example.
-You can also set `"mqm_categories": "input"` so that the annotators fill in the category from scratch. Useful for explorative analyses.
+The list may also be empty. In that case, annotators mark error spans only, with no severities or categories:
 
-### Special Tokens
+```json
+"mqm_severities": []
+```
+
+#### Free-form Categories
+
+To let annotators type categories themselves instead of choosing from a list, set `"mqm_categories": "input"`. This is useful for exploratory analyses.
+
+#### Special Tokens
 
 By default, ESA, cESA, and MQM protocols allow annotating missing content with a `[missing]` token.
 You can customize this by providing a list of strings in the `special_tokens` array inside campaign `info`.
 For example: `["[missing]", "[untranslated]"]`.
 
-### Custom Instructions
+#### Custom Instructions
 
 Set campaign-level instructions using the `instructions` field in `info` (supports HTML).
 Instructions default to protocol-specific ones (DA: scoring, ESA: error spans + scoring, MQM: error spans + categories + scoring).
@@ -255,6 +264,8 @@ Instructions default to protocol-specific ones (DA: scoring, ESA: error spans + 
   }
 }
 ```
+
+See [examples/custom_mqm.json](examples/custom_mqm.json) for a complete example.
 
 ### Pre-filled Error Spans (ESA<sup>AI</sup>)
 
