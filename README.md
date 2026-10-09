@@ -146,7 +146,7 @@ By default, model names are hidden to avoid biasing annotators. To display model
 
 ### Default Alignment Settings
 
-For ESA/cESA campaigns, you can set default values for the annotator settings panel directly in campaign `info`:
+For ESA/cESA campaigns, you can set the values of the annotator settings panel directly in campaign `info`:
 
 ```python
 {
@@ -161,7 +161,7 @@ For ESA/cESA campaigns, you can set default values for the annotator settings pa
 }
 ```
 
-These act as defaults. If an annotator already has a saved preference in their browser, that saved preference is used.
+When set in the campaign, these values are enforced and annotators cannot change them in the settings panel. When omitted, the annotator's saved browser preference (or the default) is used.
 
 ### Custom Score Sliders
 
@@ -251,6 +251,32 @@ To let annotators type categories themselves instead of choosing from a list, se
 By default, ESA, cESA, and MQM protocols allow annotating missing content with a `[missing]` token.
 You can customize this by providing a list of strings in the `special_tokens` array inside campaign `info`.
 For example: `["[missing]", "[untranslated]"]`.
+
+#### Requiring Spans and Exclusive Special Tokens
+
+For span protocols (ESA, cESA, MQM), these options in `info` control which spans an annotator must or may mark on each output:
+
+```python
+{
+  "info": {
+    "assignment": "task-based",
+    "protocol": "ESA",
+    "sliders": [],                                     # no score, spans only
+    "mqm_severities": [],                              # no severities
+    "special_tokens": ["[no harm]", "[undecidable]"],
+    "require_span": true,                              # Default: false
+    "exclusive_special_tokens": true                   # Default: false
+  },
+  "campaign_id": "my_campaign",
+  "data": [...]
+}
+```
+
+- **`require_span`**: every text output of every model must have at least one span before *Next* unlocks. A span on a special token counts, so combine this with `special_tokens` to let annotators explicitly confirm an output without errors (e.g. `[no harm]`). Outputs with audio, video or images are exempt. Items with `skippable: true` can still be skipped.
+- **`exclusive_special_tokens`**: each output can have either error spans in the text, or exactly one special token, but not both and not two special tokens. Conflicting spans are refused with a notification and the annotator must delete the existing span(s) first. The rule is enforced when spans are created; pre-filled `error_spans` are not checked.
+- **`require_full_annotation`** (default: `true`): requires all scores/sliders to be set and all spans to have a severity (and category for MQM) before *Next* unlocks. Set to `false` to allow submitting partial annotations. Independent of `require_span`.
+
+Used together, `require_span` and `exclusive_special_tokens` ensure that every output ends up in exactly one state: it has error spans in the text, or it is marked with one of the special tokens.
 
 #### Custom Instructions
 
@@ -562,6 +588,10 @@ pip3 install -e .
 pearmut add examples/wmt25_#_en-cs_CZ.json examples/wmt25_#_cs-de_DE.json
 pearmut run
 ```
+
+### Adding new campaign `info` options:
+Options in campaign `info` are only passed to the frontend if they are listed in the whitelist in `server/assignment.py`.
+When adding a new option, add it there, add the field to `ProtocolInfo` in `web/src/utils.ts`, and rebuild the frontend.
 
 ### Creating new protocols:
 1. Add HTML and TS files to `web/src`
