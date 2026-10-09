@@ -579,14 +579,20 @@ function setupCandidateInteractions(
                         // Special tokens occupy indices >= tgt.length. An output can have either
                         // spans in the text, or exactly one special token, but not both.
                         if (state.exclusive_special_tokens) {
+                            const tokens = response.info.special_tokens || []
+                            const tokenLabel = (el_i: number) => tokens[el_i - tgt.length] ?? "a special token"
                             const existing = state.response_log[item_i][model].error_spans
-                            const hasSpecial = existing.some(span => span.start_i >= tgt.length)
-                            if (is_special && existing.length > 0) {
-                                notify("A special token cannot be combined with other spans. Delete the existing span(s) first.")
+                            const existingSpecial = existing.find(span => span.start_i >= tgt.length)
+                            if (is_special && existingSpecial) {
+                                notify(`Only one of ${tokens.join(", ")} can be marked. Delete ${tokenLabel(existingSpecial.start_i)} first.`)
                                 return
                             }
-                            if (!is_special && hasSpecial) {
-                                notify("A special token is already marked. Delete it first to mark spans in the text.")
+                            if (is_special && existing.length > 0) {
+                                notify(`${tokenLabel(obj.el_i)} cannot be combined with error spans in the text. Delete them first.`)
+                                return
+                            }
+                            if (!is_special && existingSpecial) {
+                                notify(`${tokenLabel(existingSpecial.start_i)} is already marked. Delete it first to mark error spans in the text.`)
                                 return
                             }
                         }
