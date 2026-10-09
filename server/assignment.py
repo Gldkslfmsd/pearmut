@@ -40,6 +40,7 @@ CAMPAIGN_INFO_PUBLIC = {
     "docs_per_user",
     "require_full_annotation",
     "require_span",
+    "exclusive_special_tokens",
 }
 
 

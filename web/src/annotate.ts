@@ -66,6 +66,11 @@ const state = {
     // e.g. on a special token such as "[no error]". Set from campaign info's
     // `require_span` in display_next_payload (default: false).
     require_span: false,
+    // Whether a model output can have either spans in the text, or exactly one
+    // special token (e.g. "[no harm]" or "[undecidable]"), but not both and not
+    // two special tokens. Set from campaign info's
+    // `exclusive_special_tokens` in display_next_payload (default: false).
+    exclusive_special_tokens: false,
 }
 
 const has_stored_settings = {
@@ -571,6 +576,21 @@ function setupCandidateInteractions(
                             return
                         }
 
+                        // Special tokens occupy indices >= tgt.length. An output can have either
+                        // spans in the text, or exactly one special token, but not both.
+                        if (state.exclusive_special_tokens) {
+                            const existing = state.response_log[item_i][model].error_spans
+                            const hasSpecial = existing.some(span => span.start_i >= tgt.length)
+                            if (is_special && existing.length > 0) {
+                                notify("A special token cannot be combined with other spans. Delete the existing span(s) first.")
+                                return
+                            }
+                            if (!is_special && hasSpecial) {
+                                notify("A special token is already marked. Delete it first to mark spans in the text.")
+                                return
+                            }
+                        }
+
                         // create toolbox
                         let toolbox = createSpanToolbox(
                             state.protocol_error_categories,
@@ -1022,6 +1042,7 @@ async function display_next_payload(response: DataPayload) {
     state.protocol_error_categories = response.info.protocol == "MQM"
     state.require_full_annotation = response.info.require_full_annotation !== false
     state.require_span = response.info.require_span === true
+    state.exclusive_special_tokens = response.info.exclusive_special_tokens === true
 
     // Use custom MQM categories if provided, otherwise use default
     if (response.info.mqm_categories === "input") {
