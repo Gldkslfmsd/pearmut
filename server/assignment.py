@@ -39,6 +39,7 @@ CAMPAIGN_INFO_PUBLIC = {
     "dynamic_models",
     "docs_per_user",
     "require_full_annotation",
+    "require_span",
 }
 
 

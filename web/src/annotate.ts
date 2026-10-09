@@ -60,8 +60,12 @@ const state = {
     mqm_severities: MQM_SEVERITIES as string[],
     // Whether Next requires every error span/score/slider to be filled in
     // before it unlocks (default: true, the original Pearmut behavior).
-    // Set from campaign info's `require_full_annotation` in display_next_item.
+    // Set from campaign info's `require_full_annotation` in display_next_payload.
     require_full_annotation: true,
+    // Whether every (text) model output must have at least one error span,
+    // e.g. on a special token such as "[no error]". Set from campaign info's
+    // `require_span` in display_next_payload (default: false).
+    require_span: false,
 }
 
 const has_stored_settings = {
@@ -158,6 +162,24 @@ function check_unlock() {
                 }
             })
         )
+    }
+
+    // Every text output must have at least one span (possibly on a special token)
+    if (state.require_span && state.protocol_error_spans) {
+        state.response_log.forEach((doc_responses, i) => {
+            for (const [model, r] of Object.entries(doc_responses)) {
+                const tgt = state.payload_items[i]?.tgt[model]
+                // media outputs cannot carry spans, so they are exempt
+                if (tgt === undefined || isMediaContent(tgt)) continue
+                if (r.error_spans.length > 0) continue
+                if (!state.incomplete_targets.some(t => t.i === i && t.model === model && t.subTarget === undefined)) {
+                    state.incomplete_targets.push({ i, model })
+                }
+                if (!state.incomplete_items_i.includes(i)) {
+                    state.incomplete_items_i.push(i)
+                }
+            }
+        })
     }
 
     if (state.incomplete_items_i.length > 0) {
@@ -685,6 +707,7 @@ function setupCandidateInteractions(
                     state.response_log[item_i][model].error_spans = state.response_log[item_i][model].error_spans.filter(s => s != error_span)
                     state.action_log.push({ "time": Date.now() / 1000, "action": "delete_span", "index": item_i, "model": model, "start_i": left_el_i, "end_i": right_el_i })
                     state.has_unsaved_work = true
+                    check_unlock()
                 }, () => {
                     check_unlock()
                 },
@@ -998,6 +1021,7 @@ async function display_next_payload(response: DataPayload) {
     state.protocol_error_spans = response.info.protocol == "ESA" || response.info.protocol == "cESA" || response.info.protocol == "MQM"
     state.protocol_error_categories = response.info.protocol == "MQM"
     state.require_full_annotation = response.info.require_full_annotation !== false
+    state.require_span = response.info.require_span === true
 
     // Use custom MQM categories if provided, otherwise use default
     if (response.info.mqm_categories === "input") {
